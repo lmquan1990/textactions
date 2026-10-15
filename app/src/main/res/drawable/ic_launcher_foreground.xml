@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp"
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+    <!-- 1 thanh ngang - thu nhỏ, căn giữa -->
+    <path
+        android:fillColor="#0c7cd5"
+        android:pathData="M73.5,120.5 L118.5,120.5 A7.5,7.5 0 0,1 126,128 A7.5,7.5 0 0,1 118.5,135.5 L73.5,135.5 A7.5,7.5 0 0,1 66,128 A7.5,7.5 0 0,1 73.5,120.5 Z"/>
+    <!-- 4-point spark star - căn giữa -->
+    <group
+        android:translateX="67"
+        android:translateY="47"
+        android:scaleX="2.4"
+        android:scaleY="2.4">
+        <path
+            android:fillColor="#FFEB3B"
+            android:pathData="M12,0 C12,0 14,8 16,10 C18,12 26,14 26,14 C26,14 18,16 16,18 C14,20 12,28 12,28 C12,28 10,20 8,18 C6,16 -2,14 -2,14 C-2,14 6,12 8,10 C10,8 12,0 12,0 Z"/>
+    </group>
+</vector>

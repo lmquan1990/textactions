@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <group
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:pivotX="12"
+        android:pivotY="12">
+        <!-- Thanh ngang (Line) -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M6,17h12c0.55,0 1,0.45 1,1s-0.45,1 -1,1H6c-0.55,0 -1,-0.45 -1,-1s0.45,-1 1,-1z"/>
+        <!-- Dấu Spark (4-point star) căn giữa ở trên -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M12,3c0,0 0.8,3.2 1.6,4c0.8,0.8 4,1.6 4,1.6c0,0 -3.2,0.8 -4,1.6c-0.8,0.8 -1.6,4 -1.6,4c0,0 -0.8,-3.2 -1.6,-4c-0.8,-0.8 -4,-1.6 -4,-1.6c0,0 3.2,-0.8 4,-1.6c0.8,-0.8 1.6,-4 1.6,-4z"/>
+    </group>
+</vector>

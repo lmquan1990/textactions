@@ -1,0 +1,546 @@
+<resources>
+    <string name="app_name">Image to Text</string>
+    <string name="process_text_label">Image to Text</string>
+
+    <!-- Actions -->
+    <string name="btn_call">Call</string>
+    <string name="btn_sms">SMS</string>
+    <string name="btn_open_link">Open link</string>
+    <string name="btn_email">Email</string>
+    <string name="btn_maps">Map</string>
+    <string name="btn_copy_address">Copy address</string>
+    <string name="btn_search">Search</string>
+    <string name="btn_summarize">Summarize</string>
+    <string name="btn_share">Share</string>
+    <string name="btn_translate">Translate</string>
+    <string name="btn_copy">Copy</string>
+    <string name="btn_tts">Read aloud</string>
+    <string name="btn_smart_read_aloud">Smart read aloud</string>
+    <string name="btn_calendar">Calendar</string>
+    <string name="btn_reminder">Reminder</string>
+    <string name="btn_reader_mode">Reader mode</string>
+    <string name="btn_shorten_link">Shorten link</string>
+    <string name="btn_save_contact">Save contact</string>
+    <string name="btn_save_note">Save note</string>
+    <string name="btn_create_qr">Create QR</string>
+    <string name="btn_zalo">Zalo</string>
+    <string name="btn_direction">Directions</string>
+    <string name="btn_ride_hailing">Ride hailing</string>
+    <string name="btn_gps_map">Open location on map</string>
+
+    <!-- Notes -->
+    <string name="quick_note_label">Save as Note</string>
+    
+    <!-- Notes -->
+    <string name="notes_title">Notes</string>
+    <string name="context_menu_get_snippet">Get Note</string>
+    <string name="archived_notes_title">Archive</string>
+    <string name="notes_empty_title">No notes yet</string>
+    <string name="notes_empty_subtitle">Save a note from Image to Text to see it here.</string>
+    <string name="locked_note">Locked note</string>
+    <string name="lock_this_note">Lock this note</string>
+    <string name="unlock_note_title">Unlock Notes</string>
+    <string name="unlock_note_subtitle">Authenticate to view locked notes</string>
+    <string name="auth_error">Security error: %1$s</string>
+    <string name="auth_failed">Biometric not recognized. Please try again.</string>
+    <string name="auth_canceled">Unlock canceled.</string>
+    <string name="msg_note_saved">Note saved</string>
+    <string name="msg_note_archived">Note archived</string>
+    <string name="msg_note_unarchived">Note unarchived</string>
+    <string name="msg_note_deleted">Note deleted</string>
+    <string name="msg_history_deleted">Deleted</string>
+    <string name="msg_note_pinned">Note pinned</string>
+    <string name="msg_note_unpinned">Note unpinned</string>
+    <string name="time_group_pinned">Pinned</string>
+    <string name="pin_note">Pin note</string>
+    <string name="unpin_note">Unpin note</string>
+
+    <!-- Dynamic Button -->
+    <string name="btn_save_as_quick_snippet_title">Save as Quick Note</string>
+    <string name="btn_save_as_quick_snippet_desc">Save this text for later use</string>
+    <string name="btn_edit_snippet_title">Edit Note</string>
+    <string name="btn_edit_snippet_desc">Update title or content</string>
+
+    <string name="action_archive">Archive</string>
+    <string name="action_unarchive">Unarchive</string>
+    <string name="unlock_to_delete">Please unlock the note before deleting</string>
+    <string name="section_more_tools">More tools</string>
+
+    <string name="save_changes">Save Changes</string>
+    <string name="lock_requires_passcode">You need to enable screen lock to use this feature.</string>
+    
+    <!-- Categories -->
+    <string name="category_all">All</string>
+    <string name="category_general">General</string>
+    <string name="category_work">Work</string>
+    <string name="category_personal">Personal</string>
+    <string name="category_contact">Contact</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_study">Study</string>
+
+    <!-- Common -->
+    <string name="detected_title">Available actions:</string>
+    <string name="share_title">Share text</string>
+
+    <!-- Action descriptions -->
+    <string name="desc_call">Start a phone call</string>
+    <string name="desc_sms">Send an SMS</string>
+    <string name="desc_open_link">Open the link in your browser</string>
+    <string name="desc_email">Compose an email</string>
+    <string name="desc_maps">View location on map</string>
+    <string name="desc_copy_address">Copy address to clipboard</string>
+    <string name="desc_search">Search on Google</string>
+    <string name="desc_summarize">Summarize text locally</string>
+    <string name="desc_share">Share with another app</string>
+    <string name="desc_translate">Translate text</string>
+    <string name="desc_copy">Copy text to clipboard</string>
+    <string name="desc_tts">Read the selected text aloud</string>
+    <string name="desc_smart_read_aloud">Important parts only</string>
+    <string name="desc_calendar">Create a calendar event</string>
+    <string name="desc_reminder">Create a reminder</string>
+    <string name="desc_reader_mode">Open URL in simplified reader mode</string>
+    <string name="desc_shorten_link">Shorten link using TinyURL</string>
+    <string name="desc_save_contact">Add a new contact</string>
+    <string name="desc_save_note">Save content to notes</string>
+    <string name="desc_create_qr">Create a QR code to share or scan quickly</string>
+
+    <!-- Dynamic action titles/descriptions -->
+    <string name="dynamic_call">Call %1$s</string>
+    <string name="dynamic_desc_call">Start a direct phone call</string>
+    <string name="dynamic_shorten_link">Shorten link</string>
+    <string name="dynamic_desc_shorten_link">Compress URL using TinyURL</string>
+    <string name="dynamic_sms">Send SMS to %1$s</string>
+    <string name="dynamic_desc_sms">Compose a new text message</string>
+    <string name="dynamic_email">Send email to %1$s</string>
+    <string name="dynamic_desc_email">Open default email client</string>
+    <string name="dynamic_open_link">Open link in browser</string>
+    <string name="dynamic_desc_open_link">Visit %1$s in your browser</string>
+    <string name="dynamic_maps">Open in Google Maps</string>
+    <string name="dynamic_copy_address">Copy address</string>
+    <string name="dynamic_summarize">Summarize</string>
+    <string name="dynamic_desc_summarize">AI · Local summary</string>
+    <string name="dynamic_search">Search on Google</string>
+    <string name="dynamic_desc_search">Look up this text online</string>
+    <string name="dynamic_translate">Translate text</string>
+    <string name="dynamic_desc_translate">Translate offline, no internet needed</string>
+    <string name="dynamic_smart_read">Smart Read Aloud</string>
+    <string name="dynamic_desc_smart_read">Listen to key content only</string>
+    <string name="dynamic_calendar">Create calendar event</string>
+    <string name="dynamic_desc_calendar">Add to your schedule</string>
+    <string name="dynamic_save_contact">Save %1$s to contacts</string>
+    <string name="dynamic_desc_save_contact">Add as a new contact entry</string>
+    <string name="dynamic_save_note">Save as note</string>
+    <string name="dynamic_desc_save_note">Store this text in Notes</string>
+    <string name="dynamic_reminder">Create reminder</string>
+    <string name="dynamic_desc_reminder">Set a task for this time</string>
+    <string name="dynamic_reader_mode">Open in reader mode</string>
+    <string name="dynamic_desc_reader_mode">Simplified, text-only viewing</string>
+    <string name="dynamic_desc_direction">Navigate to %1$s</string>
+    <string name="dynamic_desc_ride_hailing">Find a ride to %1$s</string>
+    <string name="dynamic_desc_gps_map">View coordinates %1$s on map</string>
+    <string name="dynamic_qr_website">QR for Website</string>
+    <string name="dynamic_qr_phone">QR for Phone Number</string>
+    <string name="dynamic_qr_email">QR for Email</string>
+    <string name="dynamic_qr_address">QR for Address</string>
+    <string name="dynamic_qr_create">Create QR Code</string>
+    <string name="dynamic_desc_qr">Share or scan quickly</string>
+    <string name="reminder_prefix">Reminder: %1$s</string>
+    <string name="desc_zalo">Open Zalo chat with this phone number</string>
+    <string name="desc_direction">Navigate to this address</string>
+    <string name="desc_ride_hailing">Find a ride to this place (Grab/Be/XanhSM)</string>
+    <string name="desc_gps_map">Open coordinates on map</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Skip</string>
+    <string name="onboarding_next">Next</string>
+    <string name="onboarding_start">Get started</string>
+    <string name="onboarding_title_1">Image to Text</string>
+    <string name="onboarding_subtitle_1">Select text, then open Image to Text to access smart actions.</string>
+    <string name="onboarding_title_2">Text from Anywhere</string>
+    <string name="onboarding_subtitle_2">Scan text from photos or QR codes - then use Image to Text right away.</string>
+    <string name="onboarding_title_3">Your Assistant, Your Rules</string>
+    <string name="onboarding_subtitle_3">Everything happens on-device. No data is sent. You are in control.</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Image to Text</string>
+    <string name="quick_tools">Quick Tools</string>
+    <string name="ai_status">AI Status</string>
+    <string name="recent_actions">Recent Actions</string>
+    <string name="recents">Recents</string>
+    <string name="history">History</string>
+    <string name="history_subtitle">Recent actions you performed</string>
+    <string name="see_all">See all</string>
+    <string name="tool_scan_text">Scan Text</string>
+    <string name="tool_scan_qr">Scan QR</string>
+    <string name="tool_handwriting">Digital Ink</string>
+    <string name="tool_scan_gallery">Gallery</string>
+    <string name="tool_notes">Notes</string>
+    <string name="tool_recent">Recent</string>
+    <string name="ai_engine_title">Local AI Engine</string>
+    <string name="ai_engine_ready">Ready to use</string>
+    <string name="ai_engine_initializing">Initializing local AI...</string>
+    <string name="ai_engine_unavailable">AI unavailable</string>
+    <string name="ai_engine_offline">On-device - No internet required</string>
+    <string name="tap_to_retry">Tap to retry</string>
+    <string name="no_recent_actions">No recent actions yet</string>
+    <string name="no_actions_yet">No actions yet</string>
+    <string name="history_empty_subtitle">Your recent actions will appear here</string>
+    <string name="scan_text_or_qr">Scan text or QR to get started</string>
+    <string name="scan_qr_code">Scan QR code</string>
+    <string name="scan_from_photo">Scan Gallery</string>
+
+    <!-- History action labels -->
+    <string name="action_label_call">Call</string>
+    <string name="action_label_sms">Send SMS</string>
+    <string name="action_label_save_contact">Save Contact</string>
+    <string name="action_label_email">Send Email</string>
+    <string name="action_label_map">Open in Maps</string>
+    <string name="action_label_copy_address">Copy Address</string>
+    <string name="action_label_open_link">Open Link</string>
+    <string name="action_label_zalo">Zalo</string>
+    <string name="action_label_direction">Direction</string>
+    <string name="action_label_ride_hailing">Ride hailing</string>
+    <string name="action_label_gps_map">GPS Map</string>
+    <string name="action_label_shorten_link">Shorten link</string>
+    <string name="action_label_reader_mode">Open in reader mode</string>
+    <string name="action_label_calendar">Save to Calendar</string>
+    <string name="action_label_reminder">Create Reminder</string>
+    <string name="action_label_copy">Copy Text</string>
+    <string name="action_label_share">Share</string>
+    <string name="action_label_search">Search on Google</string>
+    <string name="action_label_ask_ai">Ask AI</string>
+    <string name="action_label_media">Search on Media</string>
+    <string name="action_label_save_note">Save as Note</string>
+    <string name="action_label_open_chat_app">Open Chat App</string>
+    <string name="action_label_create_qr">Create QR</string>
+    <string name="action_label_translate">Translate</string>
+    <string name="action_label_summarize">Summarize</string>
+    <string name="action_label_tts">Read Aloud</string>
+    <string name="action_label_smart_read_aloud">Smart Read Aloud</string>
+
+    <!-- Action setting descriptions -->
+    <string name="action_desc_call">Call detected phone numbers</string>
+    <string name="action_desc_sms">Compose a text message to detected numbers</string>
+    <string name="action_desc_save_contact">Save phone or email as a contact</string>
+    <string name="action_desc_email">Compose email from detected address</string>
+    <string name="action_desc_map">Open detected addresses in Maps</string>
+    <string name="action_desc_copy_address">Copy detected address to clipboard</string>
+    <string name="action_desc_open_link">Open detected URLs in browser</string>
+    <string name="action_desc_calendar">Create calendar event from text</string>
+    <string name="action_desc_reminder">Set reminder from selected text</string>
+    <string name="action_desc_copy">Copy selected text to clipboard</string>
+    <string name="action_desc_share">Share text to other apps</string>
+    <string name="action_desc_search">Search selected text on Google</string>
+    <string name="action_desc_ask_ai">Ask ChatGPT, Gemini, Claude, Grok, Perplexity (if installed)</string>
+    <string name="action_desc_media">Search on YouTube, Spotify (if installed)</string>
+    <string name="action_desc_save_note">Save text to Notes</string>
+    <string name="action_desc_open_chat_app">Open Chat app (if installed)</string>
+    <string name="action_desc_create_qr">Generate QR code from selected content</string>
+    <string name="action_desc_translate">Offline translation using local models</string>
+
+    <!-- History time groups -->
+    <string name="time_group_today">Today</string>
+    <string name="time_group_yesterday">Yesterday</string>
+    <string name="time_group_earlier">Earlier</string>
+
+    <!-- Relative time -->
+    <string name="time_just_now">Just now</string>
+    <string name="time_minutes_ago">%1$d minutes ago</string>
+    <string name="time_one_minute_ago">1 minute ago</string>
+    <string name="time_hours_ago">%1$d hours ago</string>
+    <string name="time_one_hour_ago">1 hour ago</string>
+    <string name="time_days_ago">%1$d days ago</string>
+    <string name="time_one_day_ago">1 day ago</string>
+
+    <!-- Misc -->
+    <string name="run_again">Run again</string>
+    <string name="copy_text">Copy text</string>
+    <string name="delete">Delete</string>
+    <string name="app_unavailable">App unavailable. Try again later.</string>
+
+    <!-- Search -->
+    <string name="search_in_history">Search in history</string>
+    <string name="search_in_notes">Search in notes</string>
+    <string name="search_history">Search history</string>
+    <string name="all">All</string>
+    <string name="no_results_for">No results for "%1$s"</string>
+
+    <!-- Settings -->
+    <string name="settings_theme">Theme</string>
+    <string name="settings_choose_theme">Choose theme</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+
+    <string name="settings_language">Language</string>
+    <string name="settings_choose_language">Choose language</string>
+    <string name="language_system">System</string>
+    <string name="language_vietnamese">Vietnamese</string>
+    <string name="language_english">English</string>
+    <string name="close">Close</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_section_general">General</string>
+    <string name="settings_how_it_works">How it works</string>
+    <string name="settings_how_it_works_subtitle">Learn how Image to Text works</string>
+    <string name="settings_section_ai_status">AI Status</string>
+    <string name="settings_section_recommended">Recommended</string>
+    <string name="settings_section_time">Calendar &amp; reminders</string>
+    <string name="settings_section_utilities">Utilities</string>
+    <string name="settings_section_privacy">Privacy</string>
+    <string name="settings_privacy_title">Privacy &amp; Data</string>
+    <string name="settings_privacy_subtitle">Your data stays on your device</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_section_backup_restore">Backup &amp; Restore</string>
+    <string name="settings_export_all_notes">Export all notes</string>
+    <string name="settings_export_all_notes_subtitle">Save all notes to a backup file</string>
+    <string name="settings_export_selected_note">Export selected note</string>
+    <string name="settings_export_selected_note_subtitle">Choose a note and export it</string>
+    <string name="settings_import_file">Import from file</string>
+    <string name="settings_import_file_subtitle">Restore notes from a local backup</string>
+    <string name="export_successful">Export successful</string>
+    <string name="export_count">Export (%1$d)</string>
+    <string name="export_failed">Export failed</string>
+    <string name="import_failed">Import failed</string>
+    <string name="imported_count">Imported %1$d notes</string>
+    <string name="no_notes_to_export">No notes to export</string>
+    <string name="select_note_to_export">Select a note to export</string>
+    <string name="action_label_format_text">Format Text</string>
+    <string name="action_desc_format_text">Clean up or format text</string>
+    <string name="settings_section_text_formatting">Text Formatting</string>
+    <string name="format_setting_auto_suggest">Auto suggest formatting</string>
+    <string name="format_setting_auto_suggest_desc">Suggest the best formatting for this text</string>
+    <string name="format_setting_ocr_fix">Enable OCR fix</string>
+    <string name="format_setting_ocr_fix_desc">Fix broken lines from OCR text</string>
+    <string name="format_setting_default_list">Default list style</string>
+    <string name="format_setting_preserve_original">Preserve original text</string>
+    <string name="format_setting_preserve_original_desc">Keep the original text before formatting</string>
+    <string name="format_list_bullet">Bullet list</string>
+    <string name="format_list_numbered">Numbered list</string>
+    <string name="format_clean_spacing">Clean spacing</string>
+    <string name="format_clean_spacing_done">Spacing cleaned</string>
+    <string name="format_fix_broken_lines">Fix broken lines</string>
+    <string name="format_remove_line_breaks">Remove line breaks</string>
+    <string name="format_uppercase">UPPERCASE</string>
+    <string name="format_lowercase">lowercase</string>
+    <string name="format_title_case">Title Case</string>
+    <string name="format_sentence_case">Sentence case</string>
+    <string name="format_bullet_list">Add bullet list</string>
+    <string name="format_numbered_list">Add numbered list</string>
+    <string name="format_remove_emoji">Remove emoji</string>
+    <string name="format_markdown">Convert to Markdown</string>
+    <string name="section_format_suggestions">Format suggestions</string>
+    <string name="format_panel_title">Format Text</string>
+    <string name="format_group_clean">Clean up</string>
+    <string name="format_group_case">Letter case</string>
+    <string name="format_group_structure">Structure</string>
+    <string name="format_preview_title">Preview</string>
+    <string name="format_apply">Apply</string>
+    <string name="format_cancel">Reset</string>
+    <string name="format_copy_result">Copy</string>
+    <string name="rerun_action">Re-run action</string>
+    <string name="share_text">Share text</string>
+    <string name="delete_history">Delete</string>
+    <string name="history_text_empty">Text is empty</string>
+    <string name="history_no_date_detected">No date detected</string>
+    <string name="history_phone_not_valid">Phone not valid</string>
+    <string name="history_action_not_supported">Action not supported</string>
+    <string name="history_no_app_found">No app found</string>
+    <string name="history_entities_title">Detected entities</string>
+    <string name="more">More</string>
+    <string name="settings_about_title">About Image to Text</string>
+    <string name="settings_about_subtitle">Version, credits, and licenses</string>
+    <string name="settings_reset_actions">Reset actions to default</string>
+    <string name="settings_reset_dialog_title">Reset to default?</string>
+    <string name="settings_reset_dialog_message">This will reset all your action preferences and ordering.</string>
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Help -->
+    <string name="help_title">Help</string>
+    <string name="settings_help">Help</string>
+    <string name="settings_help_subtitle">How Image to Text works</string>
+    <string name="help_section_what_is">What is Image to Text?</string>
+    <string name="help_what_is_body">Image to Text is a system-wide shortcut that lets you perform smart actions on any selected text — without copying, pasting, or switching apps.\n\nSelect text anywhere, tap Image to Text from the popup menu, and get instant results.</string>
+    <string name="help_section_quick_start">How to Use</string>
+    <string name="help_quick_start_body">1. Select (highlight) any text in any app — browser, messages, notes, etc.\n\n2. Tap "Image to Text" from the selection menu that appears.\n\n3. Choose an action — the app handles the rest instantly.</string>
+    <string name="help_section_actions">Available Actions</string>
+    <string name="help_actions_body">Contextual (based on text type):\n• Call — from phone numbers\n• SMS — send a message\n• Email — compose an email\n• Open Link — open URLs\n• Map / Directions — from addresses\n• Calendar — add events from dates\n• Reminder — set a reminder\n• Save Contact — from phone numbers\n• Open Chat (Zalo, Telegram, Messenger) — from phone numbers\n\nUtility (always available):\n• Search — search the web\n• Ask AI — opens ChatGPT, Gemini, Perplexity, etc. (if installed)\n• Search Media — find on YouTube, Spotify, etc.\n• Translate — translate text (works offline)\n• Copy — copy to clipboard\n• Save Note — save to your notes\n• Quick Share — share instantly\n• Format Text — clean up formatting\n• Create QR — generate a QR code\n• Shorten Link — for URLs</string>
+    <string name="help_section_notes">Notes</string>
+    <string name="help_notes_body">• Text must be selected for Image to Text to appear.\n• Some apps (Instagram, TikTok, etc.) may hide the selection menu — try long-pressing the text again.\n• Actions shown depend on what is detected in the selected text.\n• Translate works on-device — no internet required.</string>
+    <string name="help_section_tips">Tips</string>
+    <string name="help_tips_body">• Keep selections short and focused for better results.\n• Works best in browsers, messaging apps, notes, and PDF readers.\n• For addresses, include the street name for accurate map results.\n• For phone numbers, international format (+84…) works best.\n• Use Quick Note to quickly capture information while reading.</string>
+
+    <!-- About -->
+    <string name="about_version">Version %1$s — Built with ♥ in Vietnam</string>
+    <string name="about_description">Image to Text started as a personal tool — I kept needing to quickly copy, translate, or extract info from text while using my phone, but existing apps were either too bloated or full of ads.\n\nSo I built the app I actually wanted to use.\n\nNo ads. No tracking. No subscriptions. Just a fast, clean tool that respects your time and privacy.</string>
+    <string name="about_built_with">Developer  FreeUp Apps</string>
+    <string name="about_feedback_title">Feedback &amp; Support</string>
+    <string name="about_feedback_body">Found a bug or have an idea? I read every email.</string>
+    <string name="about_send_feedback">Send Feedback</string>
+    <string name="about_email">lmquan1990@gmail.com</string>
+    <string name="ok">OK</string>
+
+    <!-- ProcessText Screen -->
+    <string name="word_char_count">%1$d words · %2$d chars</string>
+    <string name="section_smart_suggestions">Smart Suggestions</string>
+    <string name="section_open_chat">Open chat with</string>
+    <string name="section_ask_ai">Ask AI</string>
+    <string name="section_search_media">Search on Media</string>
+    <string name="section_utilities">Utilities</string>
+    <string name="smart_read_aloud_title">Smart Read Aloud</string>
+    <string name="smart_read_desc">Filtered main content (no tags, menus, comments) will be read.</string>
+    <string name="smart_read_filtering">Filtering main content…</string>
+    <string name="smart_read_pause">Pause</string>
+    <string name="smart_read_play">Play</string>
+    <string name="smart_read_no_content">No suitable main content found to read.</string>
+    <string name="translate_title">Translate</string>
+    <string name="translate_select_language_hint">Tap "To:" above to select a target language</string>
+    <string name="translating">Translating…</string>
+    <string name="downloading_model">Downloading language model…</string>
+    <string name="downloading_model_wait">This may take a moment</string>
+    <string name="offline_translation">OFFLINE TRANSLATION</string>
+    <string name="translate_models_needed">Offline language models needed: %1$s</string>
+    <string name="translate_models_hint">Download once and translate offline afterwards. Or pick another language above.</string>
+    <string name="translate_models_download">Download &amp; translate</string>
+    <string name="translate_to_label">To: %1$s</string>
+    <string name="key_sentences">Key sentences</string>
+    <string name="translate_to_title">Translate to</string>
+    <string name="lang_section_downloaded">Frequently used</string>
+    <string name="lang_section_all">All languages</string>
+    <string name="save_note_title">Save as Note</string>
+    <string name="field_title">Title</string>
+    <string name="field_content">Content</string>
+    <string name="save">Save</string>
+    <string name="saved_to_notes">Saved to Notes</string>
+    <string name="saved_to_snippet">Saved to Note</string>
+    <string name="summary_title">Summary</string>
+    <string name="summary_subtitle">Key sentences from selected text</string>
+    <string name="summarizing">Summarizing…</string>
+    <string name="copy">Copy</string>
+    <string name="stop">Stop</string>
+    <string name="read_aloud">Read aloud</string>
+    <string name="tts_not_available">Text-to-speech not available</string>
+    <string name="tts_not_supported_language">Text-to-speech not supported for this language</string>
+    <string name="copied_address">Copied address</string>
+    <string name="copied">Copied</string>
+    <string name="copied_translation">Copied translation</string>
+    <string name="copied_summary">Copied summary</string>
+    <string name="app_not_installed_title">App not installed</string>
+    <string name="app_not_installed_message">You can still continue with the web browser.</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="open_web_version">Open %1$s web version</string>
+    <string name="install_app">Install app</string>
+    <string name="choose_another_ai">Choose another AI</string>
+    <string name="always_open_web">Always open web if app not installed</string>
+    <string name="cannot_open_browser">Cannot open browser.</string>
+    <string name="cannot_open_play_store">Cannot open Google Play.</string>
+    <string name="chat_on_zalo">Chat on Zalo</string>
+    <string name="chat_on_whatsapp">Chat on WhatsApp</string>
+    <string name="chat_on_telegram">Chat on Telegram</string>
+    <string name="chat_on_messenger">Chat on Messenger</string>
+
+    <!-- Notes management -->
+    <string name="merge_notes">Merge notes</string>
+    <string name="notes_merged">Notes merged</string>
+    <string name="select_all">Select all</string>
+    <string name="deselect_all">Deselect all</string>
+    <string name="clear_all">Clear all</string>
+    <string name="confirm_delete_note">Do you want to permanently delete this note?\nThe note will be lost and cannot be recovered.</string>
+    <string name="confirm_delete_title">Delete note</string>
+    <string name="selected_count">%1$d selected</string>
+    <string name="back">Back</string>
+    <string name="category">Category</string>
+    <string name="no_archived_notes">No archived notes</string>
+    <string name="edit">Edit</string>
+    <string name="undo">Undo</string>
+
+    <!-- Note Lock settings -->
+    <string name="note_lock_title">Note Lock</string>
+    <string name="note_lock_on">On</string>
+    <string name="note_lock_off">Off</string>
+    <string name="note_lock_subtitle">Requires device screen lock. When enabled, you can lock per note.</string>
+    <string name="note_lock_no_device_lock">Enable device lock to use this feature</string>
+    <string name="snackbar_enable_device_lock">Device lock is required to lock notes</string>
+    <string name="snackbar_open_settings">Settings</string>
+    <string name="lock_no_screen_lock_title">Screen lock not enabled</string>
+    <string name="lock_no_screen_lock_message">Enable screen lock in Settings to use the note lock feature.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="lock_auth_title">Authenticate to lock note</string>
+    <string name="lock_auth_subtitle">Use fingerprint, face, or device PIN</string>
+    <string name="msg_note_locked">Note locked</string>
+    <string name="msg_moved_to_private">Moved to Private Space</string>
+
+    <!-- Snippet Localization -->
+    <string name="hint_search_snippets">Search notes, content…</string>
+    <string name="hint_snippet_title">Title (Optional)</string>
+    <string name="hint_snippet_content">Note content (*)</string>
+    <string name="label_category_group">Category</string>
+    <string name="action_save_snippet">Save Note</string>
+    <string name="hint_search_vault">Search in safe notes…</string>
+    <string name="vault_empty_title">Safe space is empty</string>
+    <string name="no_results_found">No results found</string>
+    <string name="edit_snippet_title">Edit Note</string>
+    <string name="add_snippet_title">Add Note</string>
+    <string name="vault_title">Safe Note</string>
+    <string name="dialog_security_setup_title">Security Setup</string>
+    <string name="dialog_security_setup_message">No passcode set on device. Please enable screen lock to use this feature.</string>
+    <string name="dialog_unlock_snippet_title">Unlock Note</string>
+    <string name="dialog_unlock_snippet_message">This note will be visible on the main screen after unlocking.</string>
+    <string name="lock_note_message">This note will be hidden from the main screen and widgets, visible only after successful authentication.</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_unlock">Unlock</string>
+    <string name="action_toggle_archived">Toggle Archive</string>
+    <string name="action_select_all">Select All</string>
+    <string name="action_deselect_all">Deselect All</string>
+
+    <!-- Widget -->
+    <string name="widget_title">Image to Text</string>
+    <string name="widget_empty_text">No public notes yet</string>
+    <string name="widget_add_hint">Tap + to add a new note</string>
+    <string name="toast_copied_with_title">Copied: %1$s</string>
+
+    <!-- OCR crop screen -->
+    <string name="ocr_select_text_area">Select text area</string>
+    <string name="ocr_close">Close</string>
+    <string name="ocr_recognize_text">Recognize text</string>
+    <string name="ocr_recognizing">Recognizing…</string>
+    <string name="ocr_could_not_open_image">Could not open image</string>
+    <string name="ocr_no_text_found">No text found</string>
+    <string name="ocr_script_auto">Auto</string>
+    <string name="ocr_script_latin">Latin</string>
+    <string name="ocr_script_chinese">Chinese</string>
+    <string name="ocr_script_japanese">Japanese</string>
+    <string name="ocr_script_korean">Korean</string>
+    <string name="ocr_script_hindi">Hindi</string>
+
+    <!-- Hero OCR & Screenshot Scanner -->
+    <string name="hero_scan_title">Image to Text OCR</string>
+    <string name="hero_scan_subtitle">Extract text instantly from camera or photos</string>
+    <string name="hero_camera_scan">Camera Scan</string>
+    <string name="hero_gallery_scan">Import Image</string>
+    <string name="hero_crop_scan">Crop &amp; Scan</string>
+    <string name="screenshot_detected_title">Recent screenshot detected</string>
+    <string name="screenshot_detected_subtitle">Tap to scan text instantly</string>
+    <string name="screenshot_scan_now">Scan Now</string>
+    <string name="ocr_quick_copy">Copy</string>
+    <string name="ocr_quick_fix_lines">Fix Lines</string>
+    <string name="ocr_quick_translate">Translate</string>
+    <string name="ocr_quick_share">Share</string>
+    <string name="ocr_quick_save">Save Note</string>
+    <string name="ocr_lines_fixed_toast">Line breaks fixed!</string>
+    <string name="ocr_btn_recapture">Re-capture</string>
+    <string name="ocr_btn_rescan">Rescan</string>
+    <string name="ocr_btn_expand">Show more</string>
+    <string name="ocr_btn_collapse">Collapse</string>
+    <string name="camera_permission_required">Camera permission is required to scan text</string>
+    <string name="ocr_camera_hint">Align text within frame</string>
+    <string name="btn_open_actions">Open Image to Text actions</string>
+    <string name="settings_screenshot_banner">Screenshot shortcut</string>
+    <string name="settings_screenshot_banner_desc">Show a shortcut to scan text from your latest screenshot</string>
+    <string name="screenshot_banner_never_show">Don\'t show again</string>
+    <string name="screenshot_banner_turned_off">Screenshot banner turned off. Re-enable it in Settings.</string>
+    <string name="msg_item_deleted">%1$s deleted</string>
+    <string name="msg_items_deleted_count">%1$d items deleted</string>
+    <string name="msg_notes_deleted_count">%1$d notes deleted</string>
+</resources>

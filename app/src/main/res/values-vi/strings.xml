@@ -1,0 +1,548 @@
+<resources>
+    <string name="app_name">Image to Text</string>
+    <string name="process_text_label">Image to Text</string>
+
+    <!-- Actions -->
+    <string name="btn_call">Gọi điện</string>
+    <string name="btn_sms">Gửi SMS</string>
+    <string name="btn_open_link">Mở liên kết</string>
+    <string name="btn_email">Gửi Email</string>
+    <string name="btn_maps">Mở bản đồ</string>
+    <string name="btn_copy_address">Sao chép địa chỉ</string>
+    <string name="btn_search">Tìm kiếm</string>
+    <string name="btn_summarize">Tóm tắt</string>
+    <string name="btn_share">Chia sẻ</string>
+    <string name="btn_translate">Dịch</string>
+    <string name="btn_copy">Sao chép</string>
+    <string name="btn_tts">Đọc to</string>
+    <string name="btn_smart_read_aloud">Đọc to thông minh</string>
+    <string name="btn_calendar">Lịch</string>
+    <string name="btn_reminder">Lời nhắc</string>
+    <string name="btn_reader_mode">Chế độ đọc</string>
+    <string name="btn_shorten_link">Rút gọn link</string>
+    <string name="btn_save_contact">Lưu liên hệ</string>
+    <string name="btn_save_note">Lưu ghi chú</string>
+    <string name="btn_create_qr">Tạo mã QR</string>
+    <string name="btn_zalo">Zalo</string>
+    <string name="btn_direction">Chỉ đường</string>
+    <string name="btn_ride_hailing">Đặt xe</string>
+    <string name="btn_gps_map">Mở tọa độ</string>
+
+    <!-- Action descriptions (static) -->
+    <string name="desc_call">Bắt đầu cuộc gọi điện thoại</string>
+    <string name="desc_sms">Gửi tin nhắn SMS</string>
+    <string name="desc_open_link">Mở liên kết trong trình duyệt</string>
+    <string name="desc_email">Soạn email</string>
+    <string name="desc_maps">Xem vị trí trên bản đồ</string>
+    <string name="desc_copy_address">Sao chép địa chỉ vào bộ nhớ tạm</string>
+    <string name="desc_search">Tìm kiếm trên Google</string>
+    <string name="desc_summarize">Tóm tắt văn bản trên thiết bị</string>
+    <string name="desc_share">Chia sẻ với ứng dụng khác</string>
+    <string name="desc_translate">Dịch văn bản</string>
+    <string name="desc_copy">Sao chép văn bản vào bộ nhớ tạm</string>
+    <string name="desc_tts">Đọc to văn bản đã chọn</string>
+    <string name="desc_smart_read_aloud">Chỉ đọc phần quan trọng</string>
+    <string name="desc_calendar">Tạo sự kiện trên lịch</string>
+    <string name="desc_reminder">Tạo lời nhắc</string>
+    <string name="desc_reader_mode">Mở URL ở chế độ đọc đơn giản</string>
+    <string name="desc_shorten_link">Rút gọn liên kết bằng TinyURL</string>
+    <string name="desc_save_contact">Thêm liên hệ mới</string>
+    <string name="desc_save_note">Lưu nội dung vào ghi chú</string>
+    <string name="desc_create_qr">Tạo mã QR để chia sẻ hoặc quét nhanh</string>
+    <string name="desc_zalo">Mở chat Zalo với số điện thoại này</string>
+    <string name="desc_direction">Chỉ đường đến địa chỉ này</string>
+    <string name="desc_ride_hailing">Tìm xe đến địa điểm này (Grab/Be/XanhSM)</string>
+    <string name="desc_gps_map">Mở toạ độ trên bản đồ</string>
+
+    <!-- Dynamic action titles/descriptions (shown in bottom sheet) -->
+    <string name="dynamic_call">Gọi %1$s</string>
+    <string name="dynamic_desc_call">Bắt đầu cuộc gọi trực tiếp</string>
+    <string name="dynamic_shorten_link">Rút gọn liên kết</string>
+    <string name="dynamic_desc_shorten_link">Rút gọn URL bằng TinyURL</string>
+    <string name="dynamic_sms">Gửi SMS đến %1$s</string>
+    <string name="dynamic_desc_sms">Soạn tin nhắn mới</string>
+    <string name="dynamic_email">Gửi email đến %1$s</string>
+    <string name="dynamic_desc_email">Mở ứng dụng email mặc định</string>
+    <string name="dynamic_open_link">Mở liên kết trong trình duyệt</string>
+    <string name="dynamic_desc_open_link">Truy cập %1$s trong trình duyệt</string>
+    <string name="dynamic_maps">Mở trong Google Maps</string>
+    <string name="dynamic_copy_address">Sao chép địa chỉ</string>
+    <string name="dynamic_summarize">Tóm tắt</string>
+    <string name="dynamic_desc_summarize">AI · Tóm tắt trên thiết bị</string>
+    <string name="dynamic_search">Tìm trên Google</string>
+    <string name="dynamic_desc_search">Tra cứu văn bản này trực tuyến</string>
+    <string name="dynamic_translate">Dịch văn bản</string>
+    <string name="dynamic_desc_translate">Dịch offline, không cần internet</string>
+    <string name="dynamic_smart_read">Đọc to thông minh</string>
+    <string name="dynamic_desc_smart_read">Chỉ nghe phần nội dung chính</string>
+    <string name="dynamic_calendar">Tạo sự kiện lịch</string>
+    <string name="dynamic_desc_calendar">Thêm vào lịch của bạn</string>
+    <string name="dynamic_save_contact">Lưu %1$s vào danh bạ</string>
+    <string name="dynamic_desc_save_contact">Thêm liên hệ mới vào danh bạ</string>
+    <string name="dynamic_save_note">Lưu làm ghi chú</string>
+    <string name="dynamic_desc_save_note">Lưu văn bản này vào Ghi chú</string>
+    <string name="dynamic_reminder">Tạo lời nhắc</string>
+    <string name="dynamic_desc_reminder">Đặt lời nhắc cho thời điểm này</string>
+    <string name="dynamic_reader_mode">Mở ở chế độ đọc</string>
+    <string name="dynamic_desc_reader_mode">Xem chỉ văn bản, đơn giản hoá</string>
+    <string name="dynamic_desc_direction">Chỉ đường đến %1$s</string>
+    <string name="dynamic_desc_ride_hailing">Tìm xe đến %1$s</string>
+    <string name="dynamic_desc_gps_map">Xem toạ độ %1$s trên bản đồ</string>
+    <string name="dynamic_qr_website">QR cho Website</string>
+    <string name="dynamic_qr_phone">QR cho số điện thoại</string>
+    <string name="dynamic_qr_email">QR cho Email</string>
+    <string name="dynamic_qr_address">QR cho địa chỉ</string>
+    <string name="dynamic_qr_create">Tạo mã QR</string>
+    <string name="dynamic_desc_qr">Chia sẻ hoặc quét nhanh</string>
+    <string name="reminder_prefix">Lời nhắc: %1$s</string>
+
+    <!-- Action descriptions for Settings screen -->
+    <string name="action_desc_call">Gọi điện từ số điện thoại được nhận diện</string>
+    <string name="action_desc_sms">Soạn tin nhắn đến số được nhận diện</string>
+    <string name="action_desc_save_contact">Lưu số điện thoại hoặc email làm liên hệ</string>
+    <string name="action_desc_email">Soạn email từ địa chỉ được nhận diện</string>
+    <string name="action_desc_map">Mở địa chỉ được nhận diện trong bản đồ</string>
+    <string name="action_desc_copy_address">Sao chép địa chỉ được nhận diện</string>
+    <string name="action_desc_open_link">Mở URL được nhận diện trong trình duyệt</string>
+    <string name="action_desc_calendar">Tạo sự kiện lịch từ văn bản</string>
+    <string name="action_desc_reminder">Đặt lời nhắc từ văn bản đã chọn</string>
+    <string name="action_desc_copy">Sao chép văn bản đã chọn</string>
+    <string name="action_desc_share">Chia sẻ văn bản sang ứng dụng khác</string>
+    <string name="action_desc_search">Tìm kiếm văn bản đã chọn trên Google</string>
+    <string name="action_desc_ask_ai">Hỏi ChatGPT, Gemini, Claude, Grok, Perplexity (nếu đã cài)</string>
+    <string name="action_desc_media">Tìm trên YouTube, Spotify (nếu đã cài)</string>
+    <string name="action_desc_save_note">Lưu văn bản vào Ghi chú</string>
+    <string name="action_desc_open_chat_app">Mở ứng dụng chat (nếu đã cài)</string>
+    <string name="action_desc_create_qr">Tạo mã QR từ nội dung đã chọn</string>
+    <string name="action_desc_translate">Dịch offline không cần internet</string>
+
+    <!-- Notes -->
+    <string name="quick_note_label">Lưu ghi chú</string>
+
+    <!-- Notes -->
+    <string name="notes_title">Ghi chú</string>
+    <string name="context_menu_get_snippet">Lấy ghi chú</string>
+    <string name="archived_notes_title">Lưu trữ</string>
+    <string name="notes_empty_title">Chưa có ghi chú nào</string>
+    <string name="notes_empty_subtitle">Lưu ghi chú từ Image to Text để xem ở đây.</string>
+    <string name="history">Lịch sử</string>
+    <string name="history_subtitle">Các hành động gần đây bạn đã thực hiện</string>
+    <string name="see_all">Xem tất cả</string>
+    <string name="tool_scan_text">Quét chữ</string>
+    <string name="tool_scan_qr">Quét QR</string>
+    <string name="tool_scan_gallery">Thư viện</string>
+    <string name="tool_notes">Ghi chú</string>
+    <string name="tool_recent">Lịch sử</string>
+    <string name="history_empty_subtitle">Các hành động gần đây sẽ hiển thị ở đây</string>
+    <string name="scan_text_or_qr">Quét văn bản hoặc QR để bắt đầu</string>
+    <string name="scan_qr_code">Quét mã QR</string>
+    <string name="scan_from_photo">Quét thư viện</string>
+    <string name="settings_title">Cài đặt</string>
+    <string name="settings_section_general">Chung</string>
+    <string name="settings_how_it_works">Cách hoạt động</string>
+    <string name="settings_how_it_works_subtitle">Tìm hiểu cách Image to Text hoạt động</string>
+    <string name="settings_section_ai_status">Trạng thái AI</string>
+    <string name="settings_section_recommended">Gợi ý</string>
+    <string name="settings_section_time">Lịch &amp; nhắc nhở</string>
+    <string name="settings_section_utilities">Tiện ích</string>
+    <string name="settings_section_privacy">Quyền riêng tư</string>
+    <string name="settings_privacy_title">Quyền riêng tư &amp; dữ liệu</string>
+    <string name="settings_privacy_subtitle">Dữ liệu của bạn được lưu trên thiết bị</string>
+    <string name="settings_section_about">Giới thiệu</string>
+    <string name="settings_section_backup_restore">Sao lưu &amp; khôi phục</string>
+    <string name="settings_export_all_notes">Xuất tất cả ghi chú</string>
+    <string name="settings_export_all_notes_subtitle">Lưu toàn bộ ghi chú thành file sao lưu</string>
+    <string name="settings_export_selected_note">Xuất ghi chú đã chọn</string>
+    <string name="settings_export_selected_note_subtitle">Chọn một ghi chú để xuất</string>
+    <string name="settings_import_file">Nhập từ file</string>
+    <string name="settings_import_file_subtitle">Khôi phục ghi chú từ file sao lưu</string>
+    <string name="export_successful">Xuất thành công</string>
+    <string name="export_count">Xuất (%1$d)</string>
+    <string name="export_failed">Xuất thất bại</string>
+    <string name="import_failed">Nhập thất bại</string>
+    <string name="imported_count">Đã nhập %1$d ghi chú</string>
+    <string name="no_notes_to_export">Không có ghi chú để xuất</string>
+    <string name="select_note_to_export">Chọn ghi chú để xuất</string>
+    <string name="action_label_format_text">Định dạng văn bản</string>
+    <string name="action_desc_format_text">Làm sạch hoặc định dạng văn bản</string>
+    <string name="settings_section_text_formatting">Định dạng văn bản</string>
+    <string name="format_setting_auto_suggest">Tự gợi ý định dạng</string>
+    <string name="format_setting_auto_suggest_desc">Gợi ý định dạng phù hợp nhất cho văn bản</string>
+    <string name="format_setting_ocr_fix">Bật sửa lỗi OCR</string>
+    <string name="format_setting_ocr_fix_desc">Sửa lỗi ngắt dòng từ OCR</string>
+    <string name="format_setting_default_list">Kiểu danh sách mặc định</string>
+    <string name="format_setting_preserve_original">Giữ văn bản gốc</string>
+    <string name="format_setting_preserve_original_desc">Giữ lại văn bản gốc trước khi định dạng</string>
+    <string name="format_list_bullet">Danh sách dấu chấm</string>
+    <string name="format_list_numbered">Danh sách đánh số</string>
+    <string name="format_clean_spacing">Làm sạch khoảng trắng</string>
+    <string name="format_clean_spacing_done">Đã làm sạch khoảng trắng</string>
+    <string name="format_fix_broken_lines">Sửa ngắt dòng</string>
+    <string name="format_remove_line_breaks">Xóa xuống dòng</string>
+    <string name="format_uppercase">IN HOA</string>
+    <string name="format_lowercase">in thường</string>
+    <string name="format_title_case">Viết Hoa Tiêu Đề</string>
+    <string name="format_sentence_case">Viết hoa đầu câu</string>
+    <string name="format_bullet_list">Thêm danh sách chấm</string>
+    <string name="format_numbered_list">Thêm danh sách số</string>
+    <string name="format_remove_emoji">Xóa emoji</string>
+    <string name="format_markdown">Chuyển thành Markdown</string>
+    <string name="section_format_suggestions">Gợi ý định dạng</string>
+    <string name="format_panel_title">Định dạng văn bản</string>
+    <string name="format_group_clean">Làm sạch</string>
+    <string name="format_group_case">Viết hoa/thường</string>
+    <string name="format_group_structure">Cấu trúc</string>
+    <string name="format_preview_title">Xem trước</string>
+    <string name="format_apply">Áp dụng</string>
+    <string name="format_cancel">Đặt lại</string>
+    <string name="format_copy_result">Sao chép</string>
+    <string name="rerun_action">Chạy lại</string>
+    <string name="share_text">Chia sẻ văn bản</string>
+    <string name="delete_history">Xóa</string>
+    <string name="history_text_empty">Không có nội dung</string>
+    <string name="history_no_date_detected">Không phát hiện ngày</string>
+    <string name="history_phone_not_valid">Số điện thoại không hợp lệ</string>
+    <string name="history_action_not_supported">Hành động không hỗ trợ</string>
+    <string name="history_no_app_found">Không tìm thấy ứng dụng</string>
+    <string name="history_entities_title">Thực thể được phát hiện</string>
+    <string name="more">Thêm</string>
+    <string name="settings_about_title">Về Image to Text</string>
+    <string name="settings_about_subtitle">Phiên bản, công lao và giấy phép</string>
+    <string name="settings_reset_actions">Đặt lại hành động mặc định</string>
+    <string name="settings_reset_dialog_title">Đặt lại về mặc định?</string>
+    <string name="settings_reset_dialog_message">Thao tác này sẽ đặt lại các tuỳ chọn và thứ tự hành động.</string>
+    <string name="settings_help">Trợ giúp</string>
+    <string name="settings_help_subtitle">Cách Image to Text hoạt động</string>
+    <string name="help_section_what_is">Image to Text là gì?</string>
+    <string name="help_what_is_body">Image to Text là phím tắt toàn hệ thống giúp bạn thực hiện các hành động thông minh trên bất kỳ văn bản nào — không cần sao chép, dán hay chuyển ứng dụng.\n\nChọn văn bản ở bất kỳ đâu, nhấn "Image to Text" trong menu bật lên, và nhận kết quả ngay lập tức.</string>
+    <string name="help_section_quick_start">Cách dùng</string>
+    <string name="help_quick_start_body">1. Chọn (bôi đen) văn bản bất kỳ trong ứng dụng nào — trình duyệt, tin nhắn, mẫu,...\n\n2. Nhấn "Image to Text" từ menu xuất hiện sau khi chọn văn bản.\n\n3. Chọn hành động mong muốn — ứng dụng xử lý ngay lập tức.</string>
+    <string name="help_section_actions">Hành động có sẵn</string>
+    <string name="help_actions_body">Theo ngữ cảnh (tuỳ loại văn bản):\n• Gọi điện — từ số điện thoại\n• Nhắn tin — gửi SMS\n• Email — soạn email\n• Mở link — mở URL\n• Bản đồ / Chỉ đường — từ địa chỉ\n• Lịch — thêm sự kiện từ ngày giờ\n• Lời nhắc — đặt lịch nhắc\n• Lưu liên hệ — từ số điện thoại\n• Mở chat (Zalo, Telegram, Messenger) — từ số điện thoại\n\nTiện ích (luôn hiển thị):\n• Tìm kiếm — tìm trên web\n• Hỏi AI — mở ChatGPT, Gemini, Perplexity,... (nếu đã cài)\n• Tìm trên Media — tìm trên YouTube, Spotify,...\n• Dịch — dịch văn bản (hoạt động offline)\n• Sao chép — chép vào bộ nhớ tạm\n• Lưu mẫu — lưu vào mẫu\n• Chia sẻ nhanh — chia sẻ ngay\n• Định dạng — làm sạch văn bản\n• Tạo mã QR — tạo QR code\n• Rút gọn link — cho URL</string>
+    <string name="help_section_notes">Lưu ý</string>
+    <string name="help_notes_body">• Phải bôi đen văn bản thì Image to Text mới hiển thị.\n• Một số ứng dụng (Instagram, TikTok,...) có thể ẩn menu — hãy thử nhấn giữ văn bản lâu hơn.\n• Hành động hiển thị phụ thuộc vào nội dung văn bản được chọn.\n• Tính năng Dịch hoạt động trên thiết bị — không cần kết nối internet.</string>
+    <string name="help_section_tips">Mẹo hay</string>
+    <string name="help_tips_body">• Chọn đoạn văn ngắn, rõ ý để có kết quả tốt hơn.\n• Hoạt động tốt nhất trên: trình duyệt, nhắn tin, ghi chú, đọc PDF.\n• Với địa chỉ: bao gồm tên đường để bản đồ nhận diện chính xác hơn.\n• Với số điện thoại: định dạng quốc tế (+84…) cho kết quả tốt nhất.\n• Dùng Ghi chú để ghi lại thông tin nhanh khi đọc.</string>
+    <string name="settings_theme">Chủ đề</string>
+    <string name="settings_choose_theme">Chọn chủ đề</string>
+    <string name="theme_light">Sáng</string>
+    <string name="theme_dark">Tối</string>
+    <string name="theme_system">Theo hệ thống</string>
+    <string name="settings_language">Ngôn ngữ</string>
+    <string name="settings_choose_language">Chọn ngôn ngữ</string>
+    <string name="language_system">Theo hệ thống</string>
+    <string name="language_vietnamese">Tiếng Việt</string>
+    <string name="language_english">Tiếng Anh</string>
+    <string name="section_smart_suggestions">Gợi ý thông minh</string>
+    <string name="section_open_chat">Mở chat với</string>
+    <string name="section_ask_ai">Hỏi AI</string>
+    <string name="section_search_media">Tìm trên Media</string>
+    <string name="section_utilities">Tiện ích</string>
+    <string name="downloading_model">Đang tải mô hình ngôn ngữ…</string>
+    <string name="lang_section_downloaded">Thường dùng</string>
+    <string name="lang_section_all">Tất cả ngôn ngữ</string>
+    <string name="saved_to_notes">Đã lưu vào Ghi chú</string>
+    <string name="saved_to_snippet">Đã lưu vào Ghi chú</string>
+    <string name="locked_note">Ghi chú bị khóa</string>
+    <string name="lock_this_note">Khóa mẫu này</string>
+    <string name="unlock_note_title">Mở khóa Ghi chú</string>
+    <string name="unlock_note_subtitle">Xác thực để xem các ghi chú đã khóa</string>
+    <string name="lock_note_message">Ghi chú này sẽ bị ẩn khỏi màn hình chính và widget, chỉ hiển thị sau khi xác thực thành công.</string>
+    <string name="action_confirm">Xác nhận</string>
+
+    <!-- Dynamic Button -->
+    <string name="btn_save_as_quick_snippet_title">Lưu Ghi chú</string>
+    <string name="btn_save_as_quick_snippet_desc">Lưu văn bản này để sử dụng lại sau</string>
+    <string name="btn_edit_snippet_title">Chỉnh sửa Ghi chú</string>
+    <string name="btn_edit_snippet_desc">Cập nhật tiêu đề hoặc nội dung</string>
+    
+    <string name="section_more_tools">Công cụ khác</string>
+
+    <string name="action_archive">Lưu trữ</string>
+    <string name="action_unarchive">Khôi phục</string>
+    <string name="auth_error">Lỗi bảo mật: %1$s</string>
+    <string name="auth_failed">Không nhận diện được. Vui lòng thử lại.</string>
+    <string name="auth_canceled">Đã hủy mở khóa.</string>
+    <string name="msg_note_saved">Đã lưu Ghi chú</string>
+    <string name="msg_note_archived">Đã lưu trữ Ghi chú</string>
+    <string name="msg_note_unarchived">Đã khôi phục Ghi chú</string>
+    <string name="msg_note_deleted">Đã xóa Ghi chú</string>
+    <string name="msg_history_deleted">Đã xóa</string>
+    <string name="msg_note_pinned">Đã ghim Ghi chú</string>
+    <string name="msg_note_unpinned">Đã bỏ ghim Ghi chú</string>
+    <string name="pin_note">Ghim mẫu</string>
+    <string name="unpin_note">Bỏ ghim mẫu</string>
+    <string name="save_changes">Lưu thay đổi</string>
+    <string name="lock_requires_passcode">Bạn cần bật khóa màn hình để sử dụng tính năng này.</string>
+
+    <!-- Categories -->
+    <string name="category_all">Tất cả</string>
+    <string name="category_general">Chung</string>
+    <string name="category_work">Công việc</string>
+    <string name="category_personal">Cá nhân</string>
+    <string name="category_contact">Liên hệ</string>
+    <string name="category_shopping">Mua sắm</string>
+    <string name="category_study">Học tập</string>
+
+    <!-- Common -->
+    <string name="detected_title">Hành động khả dụng:</string>
+    <string name="share_title">Chia sẻ văn bản</string>
+
+    <!-- History action labels -->
+    <string name="action_label_call">Gọi điện</string>
+    <string name="action_label_sms">Gửi SMS</string>
+    <string name="action_label_save_contact">Lưu liên hệ</string>
+    <string name="action_label_email">Gửi Email</string>
+    <string name="action_label_map">Mở bản đồ</string>
+    <string name="action_label_copy_address">Sao chép địa chỉ</string>
+    <string name="action_label_open_link">Mở liên kết</string>
+    <string name="action_label_zalo">Zalo</string>
+    <string name="action_label_direction">Chỉ đường</string>
+    <string name="action_label_ride_hailing">Đặt xe</string>
+    <string name="action_label_gps_map">Bản đồ GPS</string>
+    <string name="action_label_shorten_link">Rút gọn link</string>
+    <string name="action_label_reader_mode">Chế độ đọc</string>
+    <string name="action_label_calendar">Lưu vào Lịch</string>
+    <string name="action_label_reminder">Tạo lời nhắc</string>
+    <string name="action_label_copy">Sao chép</string>
+    <string name="action_label_share">Chia sẻ</string>
+    <string name="action_label_search">Tìm trên Google</string>
+    <string name="action_label_ask_ai">Hỏi AI</string>
+    <string name="action_label_media">Tìm trên Media</string>
+    <string name="action_label_save_note">Lưu Ghi chú</string>
+    <string name="action_label_open_chat_app">Mở ứng dụng chat</string>
+    <string name="action_label_create_qr">Tạo mã QR</string>
+    <string name="action_label_translate">Dịch</string>
+    <string name="action_label_summarize">Tóm tắt</string>
+    <string name="action_label_tts">Đọc to</string>
+    <string name="action_label_smart_read_aloud">Đọc to thông minh</string>
+
+    <!-- Search -->
+    <string name="search_in_notes">Tìm trong ghi chú</string>
+    <string name="search_in_history">Tìm trong lịch sử</string>
+    <string name="search_history">Tìm kiếm lịch sử</string>
+    <string name="all">Tất cả</string>
+    <string name="no_results_for">Không tìm thấy kết quả cho "%1$s"</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_skip">Bỏ qua</string>
+    <string name="onboarding_next">Tiếp theo</string>
+    <string name="onboarding_start">Bắt đầu</string>
+    <string name="onboarding_title_1">Image to Text</string>
+    <string name="onboarding_subtitle_1">Chọn văn bản, sau đó mở Image to Text để truy cập các hành động thông minh.</string>
+    <string name="onboarding_title_2">Văn bản từ mọi nơi</string>
+    <string name="onboarding_subtitle_2">Quét văn bản từ ảnh hoặc mã QR - sau đó sử dụng Image to Text ngay lập tức.</string>
+    <string name="onboarding_title_3">Trợ lý của bạn, Quy tắc của bạn</string>
+    <string name="onboarding_subtitle_3">Mọi thứ diễn ra trên thiết bị. Không có dữ liệu nào được gửi đi. Bạn nắm quyền kiểm soát.</string>
+
+    <!-- Notes management -->
+    <string name="merge_notes">Gộp ghi chú</string>
+    <string name="notes_merged">Đã gộp ghi chú</string>
+    <string name="select_all">Chọn tất cả</string>
+    <string name="deselect_all">Bỏ chọn tất cả</string>
+    <string name="clear_all">Xóa tất cả</string>
+    <string name="confirm_delete_note">Bạn muốn xoá vĩnh viễn ghi chú này?\nGhi chú sẽ bị mất và không thể khôi phục.</string>
+    <string name="confirm_delete_title">Xoá ghi chú</string>
+    <string name="delete">Xoá</string>
+    <string name="cancel">Huỷ</string>
+    <string name="unlock_to_delete">Vui lòng mở khóa mẫu trước khi xóa</string>
+    <string name="selected_count">Đã chọn %1$d</string>
+    <string name="back">Quay lại</string>
+    <string name="edit_note">Chỉnh sửa</string>
+    <string name="category">Danh mục</string>
+    <string name="no_archived_notes">Không có mẫu lưu trữ</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="undo">Hoàn tác</string>
+
+    <!-- Note Lock settings -->
+    <string name="note_lock_title">Khóa mẫu</string>
+    <string name="note_lock_on">Bật</string>
+    <string name="note_lock_off">Tắt</string>
+    <string name="note_lock_subtitle">Cần khóa màn hình thiết bị. Khi bật, bạn có thể khóa từng mẫu.</string>
+    <string name="note_lock_no_device_lock">Bật khóa thiết bị để sử dụng tính năng này</string>
+    <string name="snackbar_enable_device_lock">Cần khóa thiết bị để khóa mẫu</string>
+    <string name="snackbar_open_settings">Cài đặt</string>
+    <string name="lock_no_screen_lock_title">Khóa màn hình chưa được bật</string>
+    <string name="lock_no_screen_lock_message">Bật khóa màn hình trong Cài đặt để sử dụng tính năng khóa mẫu.</string>
+    <string name="open_settings">Mở Cài đặt</string>
+    <string name="lock_auth_title">Xác thực để khóa mẫu</string>
+    <string name="lock_auth_subtitle">Sử dụng vân tay, khuôn mặt hoặc mã PIN của thiết bị</string>
+    <string name="msg_note_locked">Đã khóa mẫu</string>
+    <string name="msg_moved_to_private">Đã chuyển vào Không gian riêng tư</string>
+
+    <!-- Common UI -->
+    <string name="close">Đóng</string>
+    <string name="ok">OK</string>
+    <string name="save">Lưu</string>
+    <string name="copy">Sao chép</string>
+    <string name="stop">Dừng</string>
+    <string name="read_aloud">Đọc to</string>
+    <string name="run_again">Chạy lại</string>
+    <string name="copy_text">Sao chép văn bản</string>
+    <string name="app_unavailable">Ứng dụng không khả dụng. Thử lại sau.</string>
+    <string name="word_char_count">%1$d từ · %2$d ký tự</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_title">Image to Text</string>
+    <string name="quick_tools">Công cụ nhanh</string>
+    <string name="ai_status">Trạng thái AI</string>
+    <string name="recent_actions">Hành động gần đây</string>
+    <string name="recents">Gần đây</string>
+    <string name="tool_handwriting">Chữ viết tay</string>
+    <string name="ai_engine_title">AI trên thiết bị</string>
+    <string name="ai_engine_ready">Sẵn sàng sử dụng</string>
+    <string name="ai_engine_initializing">Đang khởi động AI...</string>
+    <string name="ai_engine_unavailable">AI không khả dụng</string>
+    <string name="ai_engine_offline">Trên thiết bị - Không cần internet</string>
+    <string name="tap_to_retry">Nhấn để thử lại</string>
+    <string name="no_recent_actions">Chưa có hành động gần đây</string>
+    <string name="no_actions_yet">Chưa có hành động nào</string>
+
+    <!-- Bottom sheet action feedback -->
+    <string name="copied">Sao chép thành công</string>
+    <string name="copied_address">Đã sao chép địa chỉ</string>
+    <string name="copied_translation">Đã sao chép bản dịch</string>
+    <string name="copied_summary">Đã sao chép tóm tắt</string>
+    <string name="tts_not_available">Tính năng đọc to không khả dụng</string>
+    <string name="tts_not_supported_language">Tính năng đọc to không hỗ trợ ngôn ngữ này</string>
+
+    <!-- Translate panel -->
+    <string name="translate_title">Dịch</string>
+    <string name="translate_select_language_hint">Nhấn vào "Sang:" bên trên để chọn ngôn ngữ đích</string>
+    <string name="translating">Đang dịch…</string>
+    <string name="downloading_model_wait">Có thể mất một lúc</string>
+    <string name="offline_translation">DỊCH OFFLINE</string>
+    <string name="translate_models_needed">Cần tải gói ngôn ngữ offline: %1$s</string>
+    <string name="translate_models_hint">Chỉ cần tải một lần, sau đó dịch offline. Hoặc chọn ngôn ngữ khác ở trên.</string>
+    <string name="translate_models_download">Tải về &amp; dịch</string>
+    <string name="translate_to_label">Sang: %1$s</string>
+    <string name="key_sentences">Câu chủ đạo</string>
+    <string name="translate_to_title">Dịch sang</string>
+
+    <!-- Summary panel -->
+    <string name="summary_title">Tóm tắt</string>
+    <string name="summary_subtitle">Câu chủ đạo từ văn bản đã chọn</string>
+    <string name="summarizing">Đang tóm tắt…</string>
+
+    <!-- Save Note panel -->
+    <string name="save_note_title">Lưu làm Ghi chú</string>
+    <string name="field_title">Tiêu đề</string>
+    <string name="field_content">Nội dung</string>
+
+    <!-- Smart Read Aloud panel -->
+    <string name="smart_read_aloud_title">Đọc to thông minh</string>
+    <string name="smart_read_desc">Nội dung chính đã lọc (không có thẻ, menu, bình luận) sẽ được đọc.</string>
+    <string name="smart_read_filtering">Đang lọc nội dung chính…</string>
+    <string name="smart_read_pause">Tạm dừng</string>
+    <string name="smart_read_play">Phát</string>
+    <string name="smart_read_no_content">Không tìm thấy nội dung chính phù hợp để đọc.</string>
+
+    <!-- AI app chooser -->
+    <string name="app_not_installed_title">Ứng dụng chưa được cài đặt</string>
+    <string name="app_not_installed_message">Bạn vẫn có thể tiếp tục bằng trình duyệt web.</string>
+    <string name="open_in_browser">Mở trong trình duyệt</string>
+    <string name="open_web_version">Mở phiên bản web của %1$s</string>
+    <string name="install_app">Cài đặt ứng dụng</string>
+    <string name="choose_another_ai">Chọn AI khác</string>
+    <string name="always_open_web">Luôn mở web nếu ứng dụng chưa cài</string>
+    <string name="cannot_open_browser">Không thể mở trình duyệt.</string>
+    <string name="cannot_open_play_store">Không thể mở Google Play.</string>
+
+    <!-- Chat actions -->
+    <string name="chat_on_zalo">Nhắn tin qua Zalo</string>
+    <string name="chat_on_whatsapp">Nhắn tin qua WhatsApp</string>
+    <string name="chat_on_telegram">Nhắn tin qua Telegram</string>
+    <string name="chat_on_messenger">Nhắn tin qua Messenger</string>
+
+    <!-- Time groups -->
+    <string name="time_group_today">Hôm nay</string>
+    <string name="time_group_yesterday">Hôm qua</string>
+    <string name="time_group_earlier">Trước đó</string>
+    <string name="time_just_now">Vừa xong</string>
+    <string name="time_minutes_ago">%1$d phút trước</string>
+    <string name="time_one_minute_ago">1 phút trước</string>
+    <string name="time_hours_ago">%1$d giờ trước</string>
+    <string name="time_one_hour_ago">1 giờ trước</string>
+    <string name="time_days_ago">%1$d ngày trước</string>
+    <string name="time_one_day_ago">1 ngày trước</string>
+
+    <!-- About -->
+    <string name="about_version">Phiên bản %1$s — Made with ♥ in Vietnam</string>
+    <string name="about_description">Image to Text bắt đầu như một công cụ cá nhân — tôi thường xuyên cần sao chép nhanh, dịch thuật, hoặc trích xuất thông tin từ văn bản khi dùng điện thoại, nhưng các ứng dụng hiện có đều quá nặng nề hoặc đầy quảng cáo.\n\nVì vậy tôi đã tự xây dựng ứng dụng mình thực sự muốn dùng.\n\nKhông quảng cáo. Không theo dõi. Không đăng ký. Chỉ là một công cụ nhanh, gọn gàng, tôn trọng thời gian và quyền riêng tư của bạn.</string>
+    <string name="about_built_with">Nhà phát triển  FreeUp Apps</string>
+    <string name="about_feedback_title">Phản hồi &amp; Hỗ trợ</string>
+    <string name="about_feedback_body">Tìm thấy lỗi hay có ý tưởng? Tôi đọc từng email.</string>
+    <string name="about_send_feedback">Gửi phản hồi</string>
+    <string name="about_email">lmquan1990@gmail.com</string>
+
+    <!-- Snippet Localization -->
+    <string name="hint_search_snippets">Tìm ghi chú, nội dung…</string>
+    <string name="hint_snippet_title">Tiêu đề (Không bắt buộc)</string>
+    <string name="hint_snippet_content">Nội dung ghi chú (*)</string>
+    <string name="label_category_group">Phân loại</string>
+    <string name="action_save_snippet">Tạo ghi chú</string>
+    <string name="hint_search_vault">Tìm trong kho an toàn…</string>
+    <string name="vault_title">Kho an toàn</string>
+    <string name="vault_empty_title">Kho an toàn trống</string>
+    <string name="no_results_found">Không tìm thấy kết quả</string>
+    <string name="edit_snippet_title">Chỉnh sửa ghi chú</string>
+    <string name="add_snippet_title">Tạo ghi chú</string>
+    <string name="dialog_security_setup_title">Thiết lập bảo mật</string>
+    <string name="dialog_security_setup_message">Thiết bị chưa cài đặt mật khẩu. Vui lòng thiết lập khóa màn hình để sử dụng tính năng bảo mật này.</string>
+    <string name="dialog_unlock_snippet_title">Mở khóa ghi chú</string>
+    <string name="dialog_unlock_snippet_message">Ghi chú này sẽ được hiển thị công khai ở màn hình chính sau khi mở khóa.</string>
+    <string name="action_unlock">Mở khóa</string>
+    <string name="action_toggle_archived">Bật/tắt lưu trữ</string>
+    <string name="action_select_all">Chọn tất cả</string>
+    <string name="action_deselect_all">Bỏ chọn tất cả</string>
+
+    <!-- Widget -->
+    <string name="widget_title">Image to Text</string>
+    <string name="widget_empty_text">Chưa có ghi chú công khai</string>
+    <string name="widget_add_hint">Bấm + để thêm ghi chú mới</string>
+    <string name="toast_copied_with_title">Đã sao chép: %1$s</string>
+
+    <!-- OCR crop screen -->
+    <string name="ocr_select_text_area">Chọn vùng văn bản</string>
+    <string name="ocr_close">Đóng</string>
+    <string name="ocr_recognize_text">Nhận diện văn bản</string>
+    <string name="ocr_recognizing">Đang nhận diện…</string>
+    <string name="ocr_could_not_open_image">Không thể mở ảnh</string>
+    <string name="ocr_no_text_found">Không tìm thấy văn bản</string>
+    <string name="ocr_script_auto">Tự động</string>
+    <string name="ocr_script_latin">Latin</string>
+    <string name="ocr_script_chinese">Tiếng Trung</string>
+    <string name="ocr_script_japanese">Tiếng Nhật</string>
+    <string name="ocr_script_korean">Tiếng Hàn</string>
+    <string name="ocr_script_hindi">Tiếng Hindi</string>
+
+    <!-- Hero OCR & Screenshot Scanner -->
+    <string name="hero_scan_title">Quét ảnh sang chữ</string>
+    <string name="hero_scan_subtitle">Trích xuất văn bản từ camera hoặc thư viện ảnh</string>
+    <string name="hero_camera_scan">Chụp &amp; Quét</string>
+    <string name="hero_gallery_scan">Chọn ảnh</string>
+    <string name="hero_crop_scan">Cắt &amp; Quét</string>
+    <string name="screenshot_detected_title">Phát hiện ảnh chụp màn hình</string>
+    <string name="screenshot_detected_subtitle">Chạm để quét văn bản ngay lập tức</string>
+    <string name="screenshot_scan_now">Quét ngay</string>
+    <string name="ocr_quick_copy">Sao chép</string>
+    <string name="ocr_quick_fix_lines">Sửa ngắt dòng</string>
+    <string name="ocr_quick_translate">Dịch</string>
+    <string name="ocr_quick_share">Chia sẻ</string>
+    <string name="ocr_quick_save">Lưu mẫu</string>
+    <string name="ocr_lines_fixed_toast">Đã nối các dòng gãy!</string>
+    <string name="ocr_btn_recapture">Chụp lại</string>
+    <string name="ocr_btn_rescan">Quét lại</string>
+    <string name="ocr_btn_expand">Xem thêm</string>
+    <string name="ocr_btn_collapse">Thu gọn</string>
+    <string name="camera_permission_required">Cần quyền camera để quét văn bản</string>
+    <string name="ocr_camera_hint">Căn chỉnh văn bản trong khung hình</string>
+    <string name="btn_open_actions">Mở thao tác Image to Text</string>
+    <string name="settings_screenshot_banner">Lối tắt ảnh chụp màn hình</string>
+    <string name="settings_screenshot_banner_desc">Hiện lối tắt quét văn bản từ ảnh chụp màn hình mới nhất</string>
+    <string name="screenshot_banner_never_show">Không hiện lại</string>
+    <string name="screenshot_banner_turned_off">Đã tắt banner ảnh chụp màn hình. Bật lại trong Cài đặt.</string>
+    <string name="msg_item_deleted">Đã xóa %1$s</string>
+    <string name="msg_items_deleted_count">Đã xóa %1$d mục</string>
+    <string name="msg_notes_deleted_count">Đã xóa %1$d ghi chú</string>
+</resources>

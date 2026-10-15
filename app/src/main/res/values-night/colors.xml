@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode: Nền #000 + Item/card #1E1E1E -->
+    <color name="bg_light">#000000</color>
+    <color name="surface_item">#1E1E1E</color>
+    <color name="text_dark">#E6E1E5</color>
+    <color name="text_gray">#CAC4D0</color>
+    <color name="divider">#3D3D3D</color>
+    <color name="stroke_light">#3D3D3D</color>
+    <color name="divider_variant">#1AFFFFFF</color>
+    <!-- Card accent backgrounds - darker variants for dark mode -->
+    <color name="brand_blue_light">#FF1A2D4D</color>
+    <color name="cat_blue_light">#FF1A2D4D</color>
+    <color name="cat_orange_light">#FF3D2A00</color>
+    <color name="cat_red_light">#FF3D2020</color>
+    <color name="cat_purple_light">#FF2D1F33</color>
+    <color name="cat_green_light">#FF0D2618</color>
+
+    <!-- Splash - Dark mode: đen -->
+    <color name="splash_bg_dark">#000000</color>
+
+    <!-- Widget Design Tokens - Dark -->
+    <color name="widget_background">#1B1C17</color>
+    <color name="widget_card_background">#2B2D26</color>
+    <color name="widget_text_primary">#E4E3DA</color>
+    <color name="widget_text_secondary">#929288</color>
+    <color name="widget_icon_tint">#E4E3DA</color>
+</resources>

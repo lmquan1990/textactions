@@ -1,0 +1,38 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Android Studio
+*.hprof
+
+# Built variants
+**/build/
+**/release/
+
+# Kotlin
+.kotlin
+
+# VS Code
+.vscode
+
+# Claude/AI
+.claude
+
+# Temp files
+*.class
+package_failure.txt
+
+# Separate git repo (cloned tool), not part of this project
+/app-store-screenshots/

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
+    <!-- Package visibility (Android 11+): cần khai báo để getLaunchIntentForPackage/getPackageInfo thấy app -->
+    <queries>
+        <!-- Open chat app -->
+        <package android:name="com.zing.zalo" />
+        <package android:name="org.telegram.messenger" />
+        <package android:name="com.facebook.orca" />
+        <package android:name="com.facebook.messenger" />
+        <package android:name="com.whatsapp" />
+        <!-- Ask AI -->
+        <package android:name="com.openai.chatgpt" />
+        <package android:name="com.google.android.apps.bard" />
+        <package android:name="com.google.android.apps.genai.gemini" />
+        <package android:name="com.google.android.apps.genai" />
+        <package android:name="ai.perplexity.app.android" />
+        <package android:name="ai.perplexity.app" />
+        <package android:name="com.anthropic.claude" />
+        <package android:name="ai.x.grok" />
+        <!-- Open Media -->
+        <package android:name="com.google.android.youtube" />
+        <package android:name="com.google.android.youtube.leanback" />
+        <package android:name="com.spotify.music" />
+    </queries>
+
+    <application
+        android:name=".TextActionsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:localeConfig="@xml/locales_config"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TextActions">
+
+        <!-- ML Kit: request model download via Play Services (install-time or first use). Reduces APK size. -->
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode,ocr,ocr_chinese,ocr_devanagari,ocr_japanese,ocr_korean" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.TextActions.Splash"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ProcessTextActivity"
+            android:label="@string/process_text_label"
+            android:theme="@style/Theme.TextActions.Translucent"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".QuickNoteActivity"
+            android:label="@string/quick_note_label"
+            android:theme="@style/Theme.TextActions.QuickNote"
+            android:exported="false">
+        </activity>
+
+        <activity android:name=".ActionListActivity" android:exported="false" />
+        <activity android:name=".UserGuideActivity" android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/Theme.TextActions.TransparentSystemBars"
+            android:exported="false" />
+        <activity
+            android:name=".HelpActivity"
+            android:theme="@style/Theme.TextActions.TransparentSystemBars"
+            android:exported="false" />
+        <activity android:name=".OnboardingActivity" android:exported="false" />
+        <activity
+            android:name=".CameraScanActivity"
+            android:screenOrientation="portrait"
+            android:exported="true">
+            <!-- Lets Gallery, Files and the screenshot preview send an image directly to OCR. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <!-- Temporary Share/OCR step; never leave a stale image in Android Recents. -->
+        <activity
+            android:name=".CropOcrActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:exported="false" />
+        <activity android:name=".HandwritingActivity" android:exported="false" />
+        <activity
+            android:name=".RecentActionsActivity"
+            android:theme="@style/Theme.TextActions.TransparentSystemBars"
+            android:exported="false" />
+        <activity
+            android:name=".NotesActivity"
+            android:theme="@style/Theme.TextActions.TransparentSystemBars"
+            android:exported="false" />
+        <activity
+            android:name=".EditNoteActivity"
+            android:theme="@style/Theme.TextActions.TransparentSystemBars"
+            android:exported="false" />
+        <activity android:name=".CreateQRActivity" android:exported="false" />
+        
+        <activity
+            android:name=".SnippetBottomSheetActivity"
+            android:label="@string/context_menu_get_snippet"
+            android:theme="@style/Theme.TextActions.Translucent"
+            android:taskAffinity=".tiles"
+            android:excludeFromRecents="true"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.freeup.textactions.ACTION_SHOW_SNIPPETS_TILE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".SnippetTileService"
+            android:label="@string/context_menu_get_snippet"
+            android:icon="@drawable/ic_tile_get_snippet"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+        
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- Home Widget -->
+        <receiver
+            android:name=".widget.TextActionsWidgetReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+    </application>
+
+</manifest>
