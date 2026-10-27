@@ -525,6 +525,7 @@ class MainActivity : BaseActivity() {
                                 onSaveSnippet(id, title, content, category, isLocked, isPinned, isArchived)
                             },
                             onArchiveSnippet = { snippet -> onArchiveSnippet(snippet) },
+                            onUnarchiveSnippet = { snippet -> viewModel.unarchiveSnippet(snippet.id) },
                             onHistoryItemClick = { action ->
                                 historyViewModel.rerun(action)
                             },
@@ -795,6 +796,7 @@ fun MainDashboardScreen(
     onNotesRestore: (List<com.freeup.textactions.data.local.db.NoteEntity>) -> Unit = {},
     onSaveSnippet: (id: String?, title: String, content: String, category: String, isLocked: Boolean, isPinned: Boolean, isArchived: Boolean) -> Unit,
     onArchiveSnippet: (com.freeup.textactions.data.local.db.NoteEntity) -> Unit,
+    onUnarchiveSnippet: (com.freeup.textactions.data.local.db.NoteEntity) -> Unit = {},
     onScanScreenshot: (android.net.Uri) -> Unit = {},
     onHistoryItemClick: (com.freeup.textactions.domain.model.ActionHistory) -> Unit = {},
     onHistoryRerun: (com.freeup.textactions.domain.model.ActionHistory) -> Unit = {},
@@ -1000,14 +1002,22 @@ fun MainDashboardScreen(
                                     contentDescription = stringResource(R.string.action_select_all)
                                 )
                             }
+                            // In the Archive view the selected notes are already archived, so this restores them to Home
                             IconButton(onClick = {
-                                selectedSnippetIds.forEach { id ->
-                                    val s = uiState.snippets.find { it.id == id }
-                                    if (s != null) onArchiveSnippet(s)
-                                }
+                                val restored = uiState.snippets.filter { it.id in selectedSnippetIds }
+                                restored.forEach { onUnarchiveSnippet(it) }
                                 selectedSnippetIds = emptySet()
+                                coroutineScope.launch {
+                                    val result = snackbarHostState.showSnackbar(
+                                        message = if (restored.size == 1) context.getString(R.string.msg_note_unarchived)
+                                        else context.getString(R.string.msg_notes_unarchived_count, restored.size),
+                                        actionLabel = context.getString(R.string.undo),
+                                        duration = SnackbarDuration.Short
+                                    )
+                                    if (result == SnackbarResult.ActionPerformed) restored.forEach { onArchiveSnippet(it) }
+                                }
                             }) {
-                                Icon(AppIcons.Archive, contentDescription = null)
+                                Icon(AppIcons.Unarchive, contentDescription = stringResource(R.string.action_unarchive))
                             }
                             IconButton(onClick = {
                                 showBulkDeleteConfirm = true

@@ -72,6 +72,7 @@ object AppIcons {
     val Pause: ImageVector get() = PhosphorIcons.Regular.Pause
     val Archive: ImageVector get() = PhosphorIcons.Regular.Archive
     val ArchiveFill: ImageVector get() = PhosphorIcons.Fill.Archive
+    val Unarchive: ImageVector get() = PhosphorIcons.Regular.TrayArrowUp
     val Cpu: ImageVector get() = PhosphorIcons.Regular.Cpu
     val Map: ImageVector get() = PhosphorIcons.Regular.MapTrifold
     val MapPin: ImageVector get() = PhosphorIcons.Regular.MapPin

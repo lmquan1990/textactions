@@ -183,6 +183,12 @@ class HomeViewModel(private val repository: HomeRepository) : ViewModel() {
         }
     }
 
+    fun unarchiveSnippet(id: String) {
+        viewModelScope.launch {
+            repository.unarchiveNote(id)
+        }
+    }
+
     fun archiveSnippet(id: String) {
         viewModelScope.launch {
             repository.archiveNote(id)

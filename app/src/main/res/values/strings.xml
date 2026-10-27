@@ -543,4 +543,5 @@
     <string name="msg_item_deleted">%1$s deleted</string>
     <string name="msg_items_deleted_count">%1$d items deleted</string>
     <string name="msg_notes_deleted_count">%1$d notes deleted</string>
+    <string name="msg_notes_unarchived_count">%1$d notes unarchived</string>
 </resources>
