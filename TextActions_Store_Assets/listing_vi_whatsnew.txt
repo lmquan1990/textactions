@@ -1,0 +1,10 @@
+✨ Có gì mới ở bản 2.4
+📌 Ghim bất kỳ mục nào trong lịch sử
+🌐 Dịch: chỉ tải gói ngôn ngữ khi bạn đồng ý, mở lại bản dịch cũ tức thì
+🔗 Nhận diện liên kết chính xác hơn, bớt gợi ý "Mở liên kết" sai
+📸 Cài đặt mới: bật/tắt lối tắt ảnh chụp màn hình
+⏳ Khung chờ tải khi mở app
+📱 Cải thiện giao diện khi xoay ngang
+🗑️ Xóa ghi chú sẽ xóa luôn mục lịch sử liên quan, chỉ cần một lần Hoàn tác
+🔄 Chụp lại giờ cập nhật văn bản ngay trong cùng một sheet
+🐞 Sửa lỗi lịch sử bị trùng lặp

@@ -1,0 +1,51 @@
+Biến ảnh, ảnh chụp màn hình hay đoạn văn bản bạn chọn thành thứ bạn có thể dùng ngay, chỉ với một chạm.
+
+Image to Text quét chữ từ camera, thư viện ảnh hoặc ảnh chụp màn hình mới nhất, rồi gợi ý những việc bạn có thể làm với nó: sao chép, gọi số điện thoại, gửi email, mở liên kết, dịch hoặc lưu thành ghi chú.
+
+📷 QUÉT CHỮ TỪ HÌNH ẢNH
+• Camera, thư viện hoặc ảnh chụp màn hình: chọn nguồn phù hợp
+• Cắt đúng phần cần lấy
+• Nhận dạng chữ ngay trên thiết bị
+• Chữ Latin (gồm tiếng Việt), Trung, Nhật, Hàn và Devanagari
+• Sửa ngắt dòng, làm sạch định dạng trước khi sao chép
+
+⚡ HÀNH ĐỘNG THÔNG MINH THEO NỘI DUNG
+📞 Số điện thoại: gọi, nhắn SMS, lưu vào danh bạ, mở chat (Zalo, WhatsApp, Telegram nếu đã cài)
+✉️ Email: soạn email chỉ với một chạm
+🔗 Liên kết: mở trang web
+📍 Địa chỉ: mở bản đồ, chỉ đường
+📅 Ngày giờ: tạo sự kiện lịch hoặc nhắc nhở
+🤖 Hỏi ứng dụng AI bạn dùng (ChatGPT, Gemini, Claude... nếu đã cài)
+
+🌐 DỊCH OFFLINE
+• Dịch giữa hàng chục ngôn ngữ ngay trên thiết bị
+• Tải một ngôn ngữ một lần, sau đó dịch không cần internet
+• Bạn tự chọn gói ngôn ngữ cần tải, không có gì tự tải xuống
+• Mở lại bản dịch cũ tức thì
+
+🕘 LỊCH SỬ
+• Mọi thao tác được lưu, có tìm kiếm và bộ lọc
+• Ghim những mục bạn dùng nhiều nhất
+
+📝 GHI CHÚ
+• Lưu văn bản thành ghi chú có phân loại
+• Ghim, hoặc khóa bằng vân tay hoặc khóa màn hình
+• Sao lưu và khôi phục ghi chú
+
+📱 DÙNG Ở BẤT KỲ ĐÂU
+• Chọn văn bản trong ứng dụng bất kỳ rồi chọn "Image to Text" trong menu
+• Chia sẻ ảnh hoặc văn bản vào ứng dụng
+• Quét hoặc tạo mã QR
+• Đọc văn bản thành giọng nói
+• Widget màn hình chính và ô Cài đặt nhanh
+• Giao diện sáng/tối, tiếng Anh và tiếng Việt
+
+🔒 RIÊNG TƯ TỪ THIẾT KẾ
+• Nhận dạng chữ và dịch chạy ngay trên thiết bị
+• Không cần tài khoản
+• Internet chỉ dùng để tải gói ngôn ngữ bạn yêu cầu, và khi bạn tự mở liên kết hoặc ứng dụng khác
+
+🆓 MIỄN PHÍ MÃI MÃI
+Image to Text miễn phí, không quảng cáo, không cần tài khoản.
+
+Bạn có câu hỏi hay ý tưởng? Chúng tôi rất muốn nghe.
