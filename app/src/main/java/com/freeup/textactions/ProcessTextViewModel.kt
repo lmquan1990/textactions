@@ -431,6 +431,7 @@ class ProcessTextViewModel(
     }
 
     fun logAction(actionItem: TextActionItem, inputText: String) {
+        if (suppressHistoryLog) return
         viewModelScope.launch {
             try {
                 val actionType = actionItem.id.substringBefore(":").uppercase()
@@ -481,6 +482,8 @@ class ProcessTextViewModel(
         )
 
         val historyText = if (title.isBlank()) content.take(100).trim() else title.trim()
+        // The note itself is still created; only the extra history record is skipped
+        if (suppressHistoryLog) return
         repository.insertAction(
             ActionHistory(
                 id = 0,

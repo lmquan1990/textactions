@@ -105,7 +105,8 @@ class ProcessTextActivity : BaseActivity() {
                 )
             }
         }
-        viewModel.suppressHistoryLog = intent.getBooleanExtra("EXTRA_AUTO_TRANSLATE", false)
+        viewModel.suppressHistoryLog = intent.getBooleanExtra("EXTRA_AUTO_TRANSLATE", false) ||
+            intent.getBooleanExtra("EXTRA_SUPPRESS_HISTORY", false)
         viewModel.analyzeText(contentText)
 
         val settingsManager = SettingsManager(this)

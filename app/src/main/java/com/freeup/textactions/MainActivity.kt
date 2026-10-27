@@ -993,12 +993,11 @@ fun MainDashboardScreen(
                     if (currentView == com.freeup.textactions.ui.home.HomeView.ARCHIVED) {
                         if (isSelectMode) {
                             val allSelected = selectedSnippetIds.containsAll(allIdsInView) && allIdsInView.isNotEmpty()
-                            IconButton(onClick = {
-                                selectedSnippetIds = if (allSelected) emptySet() else allIdsInView
-                            }) {
+                            // Once everything is selected the close (X) on the left already clears the selection
+                            if (!allSelected) IconButton(onClick = { selectedSnippetIds = allIdsInView }) {
                                 Icon(
-                                    imageVector = if (allSelected) AppIcons.Deselect else AppIcons.SelectAll,
-                                    contentDescription = if (allSelected) stringResource(R.string.action_deselect_all) else stringResource(R.string.action_select_all)
+                                    imageVector = AppIcons.SelectAll,
+                                    contentDescription = stringResource(R.string.action_select_all)
                                 )
                             }
                             IconButton(onClick = {
@@ -1018,12 +1017,12 @@ fun MainDashboardScreen(
                         }
                     } else if (isHistorySelectMode) {
                         val allSelected = finalFilteredActions.isNotEmpty() && selectedHistoryIds.containsAll(finalFilteredActions.map { it.id }.toSet())
-                        IconButton(onClick = {
-                            selectedHistoryIds = if (allSelected) emptySet() else finalFilteredActions.map { it.id }.toSet()
+                        if (!allSelected) IconButton(onClick = {
+                            selectedHistoryIds = finalFilteredActions.map { it.id }.toSet()
                         }) {
                             Icon(
-                                imageVector = if (allSelected) AppIcons.Deselect else AppIcons.SelectAll,
-                                contentDescription = if (allSelected) stringResource(R.string.action_deselect_all) else stringResource(R.string.action_select_all)
+                                imageVector = AppIcons.SelectAll,
+                                contentDescription = stringResource(R.string.action_select_all)
                             )
                         }
                         IconButton(onClick = {
@@ -1153,6 +1152,7 @@ fun MainDashboardScreen(
                                         putExtra(Intent.EXTRA_PROCESS_TEXT, snippet.content)
                                         putExtra(Intent.EXTRA_PROCESS_TEXT_READONLY, true)
                                         putExtra("EXTRA_HIDE_SAVE_ACTION", true)
+                                        putExtra("EXTRA_SUPPRESS_HISTORY", true)
                                     }
                                     context.startActivity(intent)
                                 },
@@ -1605,13 +1605,10 @@ fun VaultScreen(
                 },
                 actions = {
                     if (isSelectMode) {
-                        IconButton(onClick = {
-                            if (isAllSelected) selectedSnippetIds = emptySet()
-                            else selectedSnippetIds = allIdsInView
-                        }) {
+                        if (!isAllSelected) IconButton(onClick = { selectedSnippetIds = allIdsInView }) {
                             Icon(
-                                imageVector = if (isAllSelected) AppIcons.Deselect else AppIcons.SelectAll,
-                                contentDescription = if (isAllSelected) stringResource(R.string.action_deselect_all) else stringResource(R.string.action_select_all)
+                                imageVector = AppIcons.SelectAll,
+                                contentDescription = stringResource(R.string.action_select_all)
                             )
                         }
                         IconButton(onClick = {
@@ -1705,6 +1702,7 @@ fun VaultScreen(
                                 putExtra(Intent.EXTRA_PROCESS_TEXT, snippet.content)
                                 putExtra(Intent.EXTRA_PROCESS_TEXT_READONLY, true)
                                 putExtra("EXTRA_HIDE_SAVE_ACTION", true)
+                                putExtra("EXTRA_SUPPRESS_HISTORY", true)
                             }
                             context.startActivity(intent)
                         },
@@ -2867,6 +2865,8 @@ fun HistoryItemCard(
                                         putExtra(Intent.EXTRA_PROCESS_TEXT, action.inputText)
                                         putExtra(Intent.EXTRA_PROCESS_TEXT_READONLY, true)
                                         if (isNote) putExtra("EXTRA_HIDE_SAVE_ACTION", true)
+                                        // Opened from inside the app: picking an action here must not add another history record
+                                        putExtra("EXTRA_SUPPRESS_HISTORY", true)
                                     }
                                     context.startActivity(intent)
                                 },

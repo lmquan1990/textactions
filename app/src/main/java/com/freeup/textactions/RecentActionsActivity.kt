@@ -195,13 +195,12 @@ class RecentActionsActivity : BaseActivity() {
                             actions = {
                                 if (isHistorySelectMode) {
                                     val allSelected = uiState.recentActions.isNotEmpty() && selectedHistoryIds.containsAll(uiState.recentActions.map { it.id }.toSet())
-                                    IconButton(onClick = {
-                                        selectedHistoryIds = if (allSelected) emptySet()
-                                        else uiState.recentActions.map { it.id }.toSet()
+                                    if (!allSelected) IconButton(onClick = {
+                                        selectedHistoryIds = uiState.recentActions.map { it.id }.toSet()
                                     }) {
                                         Icon(
-                                            imageVector = if (allSelected) AppIcons.Deselect else AppIcons.SelectAll,
-                                            contentDescription = if (allSelected) stringResource(R.string.deselect_all) else stringResource(R.string.select_all)
+                                            imageVector = AppIcons.SelectAll,
+                                            contentDescription = stringResource(R.string.select_all)
                                         )
                                     }
                                     IconButton(onClick = {

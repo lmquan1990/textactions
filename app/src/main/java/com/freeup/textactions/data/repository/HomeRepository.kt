@@ -79,7 +79,21 @@ class HomeRepository(
         WidgetSyncManager.updateWidget(context)
     }
 
+    /** Notes that are not shown on Home: locked ones and archived ones. */
+    fun getHiddenNotes(): Flow<List<NoteEntity>> =
+        kotlinx.coroutines.flow.combine(noteDao.getLockedSnippets(), noteDao.getArchivedNotes()) { locked, archived ->
+            (locked + archived).distinctBy { it.id }
+        }
+
     suspend fun deleteNote(id: String) {
+        // The history entry of a deleted note would otherwise reappear on Home once the note is gone
+        noteDao.getNoteById(id)?.let { note ->
+            actionHistoryDao.deleteNoteHistory(
+                noteId = note.id,
+                content = note.content.trim(),
+                titleAndContent = "${note.title}\n\n${note.content}".trim()
+            )
+        }
         noteDao.deleteById(id)
         WidgetSyncManager.updateWidget(context)
     }

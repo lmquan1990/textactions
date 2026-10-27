@@ -20,6 +20,9 @@ interface ActionHistoryDao {
     @Query("UPDATE action_history SET isPinned = :pinned, pinnedAt = :pinnedAt WHERE id = :id")
     suspend fun setPinned(id: Long, pinned: Boolean, pinnedAt: Long?)
 
+    @Query("DELETE FROM action_history WHERE actionType IN ('SAVE_NOTE', 'SAVE_TO_NOTE') AND (resultText = :noteId OR inputText = :content OR inputText = :titleAndContent)")
+    suspend fun deleteNoteHistory(noteId: String, content: String, titleAndContent: String)
+
     @Query("DELETE FROM action_history WHERE id = :id")
     suspend fun deleteById(id: Long)
 

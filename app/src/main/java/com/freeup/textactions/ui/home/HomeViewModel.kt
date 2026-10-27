@@ -4,6 +4,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.freeup.textactions.data.repository.HomeRepository
 import com.freeup.textactions.domain.model.ActionHistory
+import com.freeup.textactions.history.isLinkedTo
+import com.freeup.textactions.history.isNoteEntry
 import com.freeup.textactions.domain.model.AiState
 import com.freeup.textactions.domain.model.AiStatus
 import kotlinx.coroutines.flow.SharingStarted
@@ -24,6 +26,8 @@ data class HomeUiState(
     val snippets: List<NoteEntity> = emptyList(),
     val currentView: HomeView = HomeView.PUBLIC,
     val recentActions: List<ActionHistory> = emptyList(),
+    /** Locked or archived notes (not shown on Home). */
+    val hiddenNotes: List<NoteEntity> = emptyList(),
     /** True until the database has delivered its first snapshot, so the UI can show a skeleton instead of an empty state. */
     val isLoading: Boolean = true
 )
@@ -46,9 +50,14 @@ class HomeViewModel(private val repository: HomeRepository) : ViewModel() {
         repository.aiStatusFlow,
         snippetsFlow,
         _currentView,
-        repository.getAllActions()
-    ) { aiStatus, snippets, currentView, recentActions ->
-        HomeUiState(aiStatus, snippets, currentView, recentActions, isLoading = false)
+        repository.getAllActions(),
+        repository.getHiddenNotes()
+    ) { aiStatus, snippets, currentView, allActions, hiddenNotes ->
+        // A note moved to the vault or archive moves out of Home: drop its "Save as Note" history entry too
+        val recentActions = allActions.filterNot { action ->
+            action.isNoteEntry() && hiddenNotes.any { action.isLinkedTo(it) }
+        }
+        HomeUiState(aiStatus, snippets, currentView, recentActions, hiddenNotes, isLoading = false)
     }.stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000),

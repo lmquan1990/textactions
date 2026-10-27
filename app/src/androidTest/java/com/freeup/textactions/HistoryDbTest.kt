@@ -77,6 +77,24 @@ class HistoryDbTest {
         assertFalse(repo.hasNoteWithContent("other"))
     }
 
+    // ── Note <-> history link ────────────────────────────────────────────
+    @Test fun deletingANoteRemovesItsHistoryEntryButNotOthers() = runBlocking {
+        repo.insertNote(NoteEntity(id = "n1", title = "Shopping", content = "Milk, eggs", createdAt = 1_000L))
+        repo.insertNote(NoteEntity(id = "n2", title = "", content = "Keep me", createdAt = 2_000L))
+        repo.insertAction(action("SAVE_NOTE", "Shopping\n\nMilk, eggs", at = 1_000L))
+        repo.insertAction(action("SAVE_NOTE", "Keep me", at = 2_000L))
+        repo.insertAction(action("COPY", "Milk, eggs", at = 3_000L))   // not a note entry
+        repo.deleteNote("n1")
+        assertEquals(listOf("Keep me", "Milk, eggs").sorted(), all().map { it.inputText }.sorted())
+    }
+
+    @Test fun deletingANoteMatchesHistoryByContentOnly() = runBlocking {
+        repo.insertNote(NoteEntity(id = "n3", title = "", content = "Plain text", createdAt = 1_000L))
+        repo.insertAction(action("SAVE_TO_NOTE", "Plain text", at = 1_000L))
+        repo.deleteNote("n3")
+        assertEquals(0, all().size)
+    }
+
     // ── Pin ──────────────────────────────────────────────────────────────
     @Test fun newRecordsAreNotPinned() = runBlocking {
         repo.insertAction(action())
