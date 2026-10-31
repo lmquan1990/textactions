@@ -546,4 +546,6 @@
     <string name="msg_items_deleted_count">Đã xóa %1$d mục</string>
     <string name="msg_notes_deleted_count">Đã xóa %1$d ghi chú</string>
     <string name="msg_notes_unarchived_count">Đã bỏ lưu trữ %1$d ghi chú</string>
+    <string name="settings_more_apps">Ứng dụng khác</string>
+    <string name="settings_more_apps_subtitle">Xem các ứng dụng khác của FreeUp Apps</string>
 </resources>

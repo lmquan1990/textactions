@@ -1,0 +1,14 @@
+<en-US>
+✨ What's new in 2.4.2
+📦 Locking or archiving a note now moves it off Home; unarchive in bulk, with Undo
+🗑️ Deleting a note also removes its history entry
+✅ No more duplicate "X" buttons when selecting items
+🐞 Actions chosen from the in-app sparkle sheet no longer add history entries
+</en-US>
+<vi>
+✨ Có gì mới ở bản 2.4.2
+📦 Khóa hoặc lưu trữ ghi chú sẽ chuyển nó khỏi màn chính; bỏ lưu trữ hàng loạt, có Hoàn tác
+🗑️ Xóa ghi chú sẽ xóa luôn mục lịch sử liên quan
+✅ Hết trùng hai nút "X" khi chọn nhiều mục
+🐞 Action chọn từ nút spark trong app không còn thêm mục vào lịch sử
+</vi>

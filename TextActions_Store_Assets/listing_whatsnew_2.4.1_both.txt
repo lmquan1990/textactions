@@ -1,0 +1,24 @@
+<en-US>
+✨ What's new in 2.4.2
+📌 Pin any item in your history
+🌐 Translate: download language models only when you choose; reopen past translations instantly
+🔗 Fewer false "Open Link" suggestions
+📸 New setting: turn the screenshot shortcut on or off
+📦 Locking or archiving a note now moves it off Home; unarchive in bulk, with Undo
+🗑️ Deleting a note also removes its history entry
+🔄 Re-capture updates your text in the same sheet
+📱 Better landscape layouts
+🐞 Fewer duplicate history entries
+</en-US>
+<vi>
+✨ Có gì mới ở bản 2.4.2
+📌 Ghim bất kỳ mục nào trong lịch sử
+🌐 Dịch: chỉ tải gói ngôn ngữ khi bạn đồng ý, mở lại bản dịch cũ tức thì
+🔗 Bớt gợi ý "Mở liên kết" sai
+📸 Cài đặt mới: bật/tắt lối tắt ảnh chụp màn hình
+📦 Khóa hoặc lưu trữ ghi chú sẽ chuyển nó khỏi màn chính; bỏ lưu trữ hàng loạt, có Hoàn tác
+🗑️ Xóa ghi chú sẽ xóa luôn mục lịch sử liên quan
+🔄 Chụp lại cập nhật văn bản ngay trong cùng một sheet
+📱 Cải thiện giao diện khi xoay ngang
+🐞 Bớt lỗi lịch sử bị trùng lặp
+</vi>

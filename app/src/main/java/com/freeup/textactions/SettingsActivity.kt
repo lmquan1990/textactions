@@ -211,6 +211,22 @@ class SettingsActivity : BaseActivity() {
                             ).show()
                         }
                     },
+                    onOpenMoreApps = {
+                        // Open the publisher page in the Play Store app, falling back to the browser
+                        val devId = "8338419121935112506"
+                        val marketIntent = Intent(Intent.ACTION_VIEW, Uri.parse("market://dev?id=$devId"))
+                        try {
+                            startActivity(marketIntent)
+                        } catch (e: Exception) {
+                            try {
+                                startActivity(
+                                    Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=$devId"))
+                                )
+                            } catch (_: Exception) {
+                                Toast.makeText(context, getString(R.string.history_no_app_found), Toast.LENGTH_SHORT).show()
+                            }
+                        }
+                    },
                     onOpenAbout = {
                         showAboutDialog = true
                     },

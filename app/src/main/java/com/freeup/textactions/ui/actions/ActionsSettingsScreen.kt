@@ -67,6 +67,7 @@ fun ActionsSettingsScreen(
     onOpenAiStatus: () -> Unit = {},
     onOpenPrivacyPolicy: () -> Unit = {},
     onOpenAbout: () -> Unit = {},
+    onOpenMoreApps: () -> Unit = {},
     onDynamicColorChanged: (Boolean) -> Unit = {},
     onExportAllNotes: () -> Unit = {},
     onExportSelectedNote: () -> Unit = {},
@@ -579,6 +580,13 @@ fun ActionsSettingsScreen(
                     subtitle = stringResource(R.string.settings_about_subtitle),
                     icon = AppIcons.Info,
                     onClick = onOpenAbout
+                )
+                Spacer(modifier = Modifier.height(8.dp))
+                SettingsLinkRow(
+                    title = stringResource(R.string.settings_more_apps),
+                    subtitle = stringResource(R.string.settings_more_apps_subtitle),
+                    icon = AppIcons.OpenInNew,
+                    onClick = onOpenMoreApps
                 )
             }
 
