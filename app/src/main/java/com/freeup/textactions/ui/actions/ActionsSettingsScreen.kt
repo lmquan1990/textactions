@@ -581,12 +581,16 @@ fun ActionsSettingsScreen(
                     icon = AppIcons.Info,
                     onClick = onOpenAbout
                 )
-                Spacer(modifier = Modifier.height(8.dp))
+            }
+
+            item { SettingHeader(title = stringResource(R.string.settings_section_developer)) }
+            item {
                 SettingsLinkRow(
                     title = stringResource(R.string.settings_more_apps),
                     subtitle = stringResource(R.string.settings_more_apps_subtitle),
-                    icon = AppIcons.OpenInNew,
-                    onClick = onOpenMoreApps
+                    icon = AppIcons.GooglePlay,
+                    onClick = onOpenMoreApps,
+                    trailingIcon = AppIcons.OpenInNew
                 )
             }
 
@@ -809,7 +813,8 @@ fun SettingsLinkRow(
     subtitle: String,
     icon: ImageVector,
     onClick: () -> Unit,
-    trailingContent: @Composable (() -> Unit)? = null
+    trailingContent: @Composable (() -> Unit)? = null,
+    trailingIcon: ImageVector = AppIcons.CaretRight
 ) {
     val cardBackground = elevatedCardColor(
         colorScheme = MaterialTheme.colorScheme
@@ -864,7 +869,7 @@ fun SettingsLinkRow(
             }
             
             Icon(
-                imageVector = AppIcons.CaretRight,
+                imageVector = trailingIcon,
                 contentDescription = "Open",
                 tint = Color.Gray,
                 modifier = Modifier.size(24.dp)

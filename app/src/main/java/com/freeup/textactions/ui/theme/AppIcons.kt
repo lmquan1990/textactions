@@ -73,6 +73,7 @@ object AppIcons {
     val Archive: ImageVector get() = PhosphorIcons.Regular.Archive
     val ArchiveFill: ImageVector get() = PhosphorIcons.Fill.Archive
     val Unarchive: ImageVector get() = PhosphorIcons.Regular.TrayArrowUp
+    val GooglePlay: ImageVector get() = PhosphorIcons.Regular.GooglePlayLogo
     val Cpu: ImageVector get() = PhosphorIcons.Regular.Cpu
     val Map: ImageVector get() = PhosphorIcons.Regular.MapTrifold
     val MapPin: ImageVector get() = PhosphorIcons.Regular.MapPin
